@@ -2,7 +2,7 @@
 
 **...**
 ## Zapier Workflow
-![Zapier Workflow](Zapier-workflow.png)
+![Zapier Workflow](Google-form1.png)
 
 
 **...**
