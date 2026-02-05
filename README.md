@@ -63,7 +63,7 @@ Zapier • Google Forms • Gmail • HubSpot • Asana • Slack
 ![HubSpot Contact](hubspot-contact.png)
 
 ### Asana Task Generated
-![Asana Task](lasana-task.png)
+![Asana Task](asana-task.png)
 
 ### Slack Team Notification
 ![Slack Message](slack-message.png)
