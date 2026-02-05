@@ -48,7 +48,7 @@ Zapier • Google Forms • Gmail • HubSpot • Asana • Slack
 ## Evidence – Lead Capture & Follow-Up Automation
 
 ### Zapier Workflow
-![Zapier Workflow](projects/zapier-workflow.png) 
+![Zapier Workflow](portfolio/zapier-workflow.png) 
 
 ### Google form – The form itself
 ![Google Sheet](projects/google-sheet.png)
