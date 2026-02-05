@@ -10,10 +10,10 @@
 ![Gmail Message](Gmail-message.png)
 
 ## HubSpot Contact Created
-![HubSpot Contact](Subspot-contact.png)
+![HubSpot Contact](Hubspot-contact.png)
 
 ## Asana Task Generated
 ![Asana Task](Asana-task.png)
 
 ## Slack Team Notification
-![Slack Message](Slack-message.png)
+![Slack Message](Slack-notification.png)
