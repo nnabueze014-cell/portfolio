@@ -1,4 +1,4 @@
-# Chuks Steven – IT Support & Automation Specialist
+# Nnabueze Omeke – IT Support & Automation Specialist
 
 Welcome to my professional portfolio! Explore each section below.
 
