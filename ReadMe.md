@@ -53,6 +53,7 @@ End-to-end automation connecting Google Forms → Gmail → HubSpot → Asana �
 
 </details>
 
+---
 
 <details>
 <summary>Contact</summary>
