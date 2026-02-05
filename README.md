@@ -69,7 +69,6 @@ Zapier • Google Forms • Gmail • HubSpot • Asana • Slack
 ![Slack Message](projects/lead-automation/slack-message.png)
 
 
-
 ### Professional Development & Learning Focus
 - Helpdesk ticket handling and resolution workflows
 
