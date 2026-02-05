@@ -31,7 +31,7 @@ Built an automated workflow using Zapier to connect Google Forms, Gmail, HubSpot
 5. Slack message notifies the team  
 
 **Benefits**
-- Removed manual data entry  
+- Remove manual data entry  
 - Faster response to new leads  
 - Better team collaboration  
 - Organized customer records  
