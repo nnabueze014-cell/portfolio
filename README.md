@@ -1,4 +1,4 @@
-Professional Portfolio – Chuks Steven
+Professional Portfolio – Nnabueze Omeke 
 
 IT Support & Business Automation Specialist
 
