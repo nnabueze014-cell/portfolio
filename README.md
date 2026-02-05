@@ -1,4 +1,4 @@
-# Professional Portfolio – Chuks Steven
+# Professional Portfolio – Nnabueze Omeke 
 
 ## IT Support & Business Automation Specialist
 
@@ -13,8 +13,8 @@ Aspiring IT Support professional with practical experience in no-code automation
 - Troubleshooting  
 - Zapier Automation  
 - Google Workspace  
-- HubSpot CRM  
-- Slack & Asana  
+- HubSpot, FreshDesk CRM  
+- Slack, Monday, ClickUp, Trello & Asana  
 - Process Documentation  
 - Customer Communication  
 
