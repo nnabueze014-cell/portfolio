@@ -46,9 +46,12 @@ Designed and implemented an end-to-end lead management automation using Zapier, 
 Zapier • Google Forms • Gmail • HubSpot • Asana • Slack
 
 
-## Project Evidence
+## 📂 Projects Portfolio
 
-👉 [View Lead Automation Screenshots](lead-automation.md)
+### ▶ Project 1 – Lead Automation
+End-to-end automation using Zapier, Google Forms, HubSpot, Asana and Slack.
+
+👉 [View Project Evidence & Screenshots](Projects/Project 1 - Lead Automation/evidence.md)
 
 
 ### Professional Development & Learning Focus
