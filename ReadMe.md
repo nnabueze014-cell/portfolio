@@ -54,20 +54,6 @@ End-to-end automation connecting Google Forms → Gmail → HubSpot → Asana �
 
 </details>
 
----
-
-<details>
-<summary>Project Evidence / Proof of Work</summary>
-
-All evidence organized by project:
-
-- [Project 1 – Lead Automation](Projects/Project 1 - Lead Automation/evidence.md)  
-- [Project 2 – Ticket Automation](Projects/Project 2 - Ticket Automation/evidence.md) *(Future)*  
-- [Project 3 – CRM Sync](Projects/Project 3 - CRM Sync/evidence.md) *(Future)*
-
-</details>
-
----
 
 <details>
 <summary>Contact</summary>
