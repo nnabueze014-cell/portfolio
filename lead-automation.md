@@ -6,6 +6,11 @@
 
 
 **...**
+## Zapier Workflow
+![Zapier Workflow](Zapier-workflow.png)
+
+
+**...**
 ## Google Sheet Responses
 ![Google Sheet](Google-sheet.png)
 
