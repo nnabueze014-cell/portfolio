@@ -45,28 +45,9 @@ Designed and implemented an end-to-end lead management automation using Zapier, 
 **Tools & Technologies**
 Zapier • Google Forms • Gmail • HubSpot • Asana • Slack
 
-## Evidence – Lead Capture & Follow-Up Automation
+## Project Evidence
 
-### Zapier Workflow
-![Zapier Workflow](Zapier-workflow.png) 
-
-### Google form – The form itself
-![Google Sheet](Google-sheet.png)
-
-### Google Sheet – Form Responses
-![Google Sheet](Google-sheet.png)
-
-### Gmail Appreciation Message
-![Gmail Message](Gmail-message.png)
-
-### HubSpot Contact Created
-![HubSpot Contact](Hubspot-contact.png)
-
-### Asana Task Generated
-![Asana Task](Asana-task.png)
-
-### Slack Team Notification
-![Slack Message](Slack-notification.png)
+👉 [View Lead Automation Screenshots](lead-automation.md)
 
 
 ### Professional Development & Learning Focus
