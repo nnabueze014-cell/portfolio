@@ -1,7 +1,7 @@
 ## Lead Capture & Automation – Proof of Work
 
 **...**
-## Zapier Workflow
+## Google form (Client form)
 ![Zapier Workflow](Google-form1.png)
 
 
