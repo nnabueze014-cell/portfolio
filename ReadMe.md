@@ -9,7 +9,6 @@ Welcome to my professional portfolio! Explore each section below.
 - [About Me](#about-me)
 - [Skills](#skills)
 - [Projects](#projects)
-- [Project Evidence / Proof of Work](#project-evidence--proof-of-work)
 - [Contact](#contact)
 
 ---
