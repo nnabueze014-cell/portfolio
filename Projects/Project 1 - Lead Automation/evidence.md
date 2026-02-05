@@ -2,7 +2,7 @@
 
 **...**
 ## Google form (Client form)
-![Form](Google-form.png)
+![Form](Google-form1.png)
 
 **...**
 ## Zapier Workflow
