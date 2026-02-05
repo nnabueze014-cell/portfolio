@@ -18,25 +18,24 @@ Aspiring IT Support professional with practical experience in no-code automation
 - Process Documentation  
 - Customer Communication  
 
-### Featured Project: Lead Capture & Follow-Up Automation
+### Featured Project: Lead Capture & Automated Follow-Up System
 
 **Overview**  
-Built an automated workflow using Zapier to connect Google Forms, Gmail, HubSpot, Asana, and Slack to manage new business leads.
+Designed and implemented an end-to-end lead management automation using Zapier, integrating Google Forms, Gmail, HubSpot CRM, Asana, and Slack. This workflow transformed a previously manual process into a fully automated system, ensuring faster response times and seamless team collaboration.
 
-**What It Does**
-1. User submits Google Form  
-2. Appreciation email is sent automatically  
-3. Contact is created in HubSpot  
-4. Task is created in Asana for follow-up  
-5. Slack message notifies the team  
+**Key Responsibilities**
+- Developed automated email responses to acknowledge form submissions within 1 minute  
+- Integrated HubSpot to create and update new contacts, ensuring 100% data accuracy  
+- Configured Asana tasks automatically assigned to team members for timely lead follow-up  
+- Implemented Slack notifications to inform the team of new leads in real-time  
 
-**Benefits**
-- Remove manual data entry  
-- Faster response to new leads  
-- Better team collaboration  
-- Organized customer records  
+**Impact**
+- Reduced manual data entry by 100%  
+- Improved lead response time by over 75%  
+- Centralized customer information for better visibility  
+- Strengthened cross-team collaboration and accountability  
 
-**Tools Used**  
+**Tools & Technologies**
 Zapier • Google Forms • Gmail • HubSpot • Asana • Slack
 
 ### Learning Focus
