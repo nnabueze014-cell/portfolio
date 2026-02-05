@@ -1,51 +1,62 @@
-# Professional Portfolio – Chuks Steven
+# Professional Portfolio – Nnabueze Omeke 
 
 ## IT Support & Business Automation Specialist
 
 ### Career Goal
-To secure a remote entry-level IT Support, Helpdesk, or Automation Specialist role before mid-year by helping businesses automate workflows, support users, and improve daily operations.
+To secure a remote IT Support or Automation Specialist role before mid-year, leveraging workflow automation, troubleshooting, and CRM integrations to improve operational efficiency and customer satisfaction.
 
 ### Professional Summary
-Aspiring IT Support professional with practical experience in no-code automation and business workflow integration. I focus on connecting tools to reduce manual work, improve communication, and ensure faster response to customers and teams.
+Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing no-code solutions to reduce manual work, improve data accuracy, and streamline team operations. Adept at managing CRM systems, automating processes across Google Workspace, and collaborating effectively with teams to ensure timely follow-ups and user satisfaction.
 
 ### Core Skills
-- IT Helpdesk & User Support  
-- Troubleshooting  
-- Zapier Automation  
-- Google Workspace  
-- HubSpot CRM  
-- Slack & Asana  
-- Process Documentation  
-- Customer Communication  
+- IT Helpdesk & User Support
 
-### Featured Project: Lead Capture & Follow-Up Automation
+- Troubleshooting & Remote Support
 
+- Zapier / No-Code Automation
+
+- Google Workspace Administration
+
+- HubSpot CRM Management
+
+- Slack & Asana Workflow Automation
+
+- Process Documentation & Reporting
+
+- Customer Communication & Follow-Up
+
+
+### Featured Project: Lead Capture & Automated Follow-Up System
 **Overview**  
-Built an automated workflow using Zapier to connect Google Forms, Gmail, HubSpot, Asana, and Slack to manage new business leads.
+Designed and implemented an end-to-end lead management automation using Zapier, integrating Google Forms, Gmail, HubSpot CRM, Asana, and Slack. This workflow transformed a previously manual process into a fully automated system, improving response times and enhancing team collaboration.
 
-**What It Does**
-1. User submits Google Form  
-2. Appreciation email is sent automatically  
-3. Contact is created in HubSpot  
-4. Task is created in Asana for follow-up  
-5. Slack message notifies the team  
+**Key Responsibilities**
+- **Automated email responses****:** Acknowledge form submissions within 1 minute
+- **CRM Integration:** Create and update HubSpot contacts with 100% data accuracy
+- **Task Automation:** Configure Asana tasks automatically assigned to team members
+- **Team Notifications:** Implement Slack messages for real-time lead updates
 
-**Benefits**
-- Removed manual data entry  
-- Faster response to new leads  
-- Better team collaboration  
-- Organized customer records  
+**Impact**
+- **Eliminated manual data entry** – reduced errors by 100%
+- **Faster lead response** – improved time-to-contact by over 75%
+- **Centralized customer data** – better visibility and reporting
+- **Improved collaboration** – enhanced team accountability
 
-**Tools Used**  
+**Tools & Technologies**
 Zapier • Google Forms • Gmail • HubSpot • Asana • Slack
 
-### Learning Focus
-- Helpdesk ticket handling  
-- Remote support  
-- CRM workflows  
-- IT support communication  
+
+### Professional Development & Learning Focus
+- Helpdesk ticket handling and resolution workflows
+
+- Remote troubleshooting and system support
+
+- CRM workflow design and automation
+
+- IT support process documentation and knowledge base creation
+
 
 ### Contact
-Email:  
-LinkedIn:  
+Email: nnabueze014@gmail.com
+LinkedIn: 
 Location: Remote (Nigeria)
