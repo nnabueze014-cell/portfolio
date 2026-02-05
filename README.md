@@ -48,25 +48,25 @@ Zapier • Google Forms • Gmail • HubSpot • Asana • Slack
 ## Evidence – Lead Capture & Follow-Up Automation
 
 ### Zapier Workflow
-![Zapier Workflow](portfolio/zapier-workflow.png) 
+![Zapier Workflow](zapier-workflow.png) 
 
 ### Google form – The form itself
-![Google Sheet](projects/google-sheet.png)
+![Google Sheet](google-sheet.png)
 
 ### Google Sheet – Form Responses
-![Google Sheet](projects/google-sheet.png)
+![Google Sheet](google-sheet.png)
 
 ### Gmail Appreciation Message
-![Gmail Message](projects/gmail-message.png)
+![Gmail Message](gmail-message.png)
 
 ### HubSpot Contact Created
-![HubSpot Contact](projects/hubspot-contact.png)
+![HubSpot Contact](hubspot-contact.png)
 
 ### Asana Task Generated
-![Asana Task](projects/lasana-task.png)
+![Asana Task](lasana-task.png)
 
 ### Slack Team Notification
-![Slack Message](projects/lead-automation/slack-message.png)
+![Slack Message](slack-message.png)
 
 
 ### Professional Development & Learning Focus
