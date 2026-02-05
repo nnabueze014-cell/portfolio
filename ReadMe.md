@@ -1,70 +1,86 @@
-# Professional Portfolio – Nnabueze Omeke 
+# Chuks Steven – IT Support & Automation Specialist
 
-## IT Support & Business Automation Specialist
+Welcome to my professional portfolio! Explore each section below.
 
-### Career Goal
-To secure a remote IT Support or Automation Specialist role before mid-year, leveraging workflow automation, troubleshooting, and CRM integrations to improve operational efficiency and customer satisfaction.
+---
 
-### Professional Summary
-Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing no-code solutions to reduce manual work, improve data accuracy, and streamline team operations. Adept at managing CRM systems, automating processes across Google Workspace, and collaborating effectively with teams to ensure timely follow-ups and user satisfaction.
+## 📖 Table of Contents
 
-### Core Skills
-- IT Helpdesk & User Support
+- [About Me](#about-me)
+- [Skills](#skills)
+- [Projects](#projects)
+- [Project Evidence / Proof of Work](#project-evidence--proof-of-work)
+- [Contact](#contact)
 
-- Troubleshooting & Remote Support
+---
 
-- Zapier / No-Code Automation
+<details>
+<summary>About Me / Career Summary</summary>
 
-- Google Workspace Administration
+**Name:** Chuks Steven  
+**Career Goal:** Secure a remote IT Support or Automation Specialist role before mid-year, leveraging workflow automation, troubleshooting, and CRM integrations to improve operational efficiency and customer satisfaction.
 
-- HubSpot CRM Management
+**Professional Summary:**  
+Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing **no-code solutions** to reduce manual work, improve data accuracy, and streamline team operations. Adept at managing CRM systems, automating processes across Google Workspace, and collaborating effectively with teams to ensure timely follow-ups and user satisfaction.
 
-- Slack & Asana Workflow Automation
+</details>
 
-- Process Documentation & Reporting
+---
 
+<details>
+<summary>Skills</summary>
+
+- IT Helpdesk & User Support  
+- Troubleshooting & Remote Support  
+- Zapier / No-Code Automation  
+- Google Workspace Administration  
+- HubSpot CRM Management  
+- Slack & Asana Workflow Automation  
+- Process Documentation & Reporting  
 - Customer Communication & Follow-Up
 
+</details>
 
-### Featured Project: Lead Capture & Automated Follow-Up System
-**Overview**  
-Designed and implemented an end-to-end lead management automation using Zapier, integrating Google Forms, Gmail, HubSpot CRM, Asana, and Slack. This workflow transformed a previously manual process into a fully automated system, improving response times and enhancing team collaboration.
+---
 
-**Key Responsibilities**
-- **Automated email responses****:** Acknowledge form submissions within 1 minute
-- **CRM Integration:** Create and update HubSpot contacts with 100% data accuracy
-- **Task Automation:** Configure Asana tasks automatically assigned to team members
-- **Team Notifications:** Implement Slack messages for real-time lead updates
-
-**Impact**
-- **Eliminated manual data entry** – reduced errors by 100%
-- **Faster lead response** – improved time-to-contact by over 75%
-- **Centralized customer data** – better visibility and reporting
-- **Improved collaboration** – enhanced team accountability
-
-**Tools & Technologies**
-Zapier • Google Forms • Gmail • HubSpot • Asana • Slack
-
-
-## 📂 Projects Portfolio
+<details>
+<summary>Projects</summary>
 
 ### ▶ Project 1 – Lead Automation
-End-to-end automation using Zapier, Google Forms, HubSpot, Asana and Slack.
+End-to-end automation connecting Google Forms → Gmail → HubSpot → Asana → Slack.
 
-👉 [View Project Evidence & Screenshots](Projects/Project 1 - Lead Automation/evidence.md)
+[View Project Evidence & Screenshots](Projects/Project 1 - Lead Automation/evidence.md)
 
+### ▶ Project 2 – Ticket Automation *(Future)*  
+- Description goes here  
+- Evidence to be added
 
-### Professional Development & Learning Focus
-- Helpdesk ticket handling and resolution workflows
+### ▶ Project 3 – CRM Sync *(Future)*  
+- Description goes here  
+- Evidence to be added
 
-- Remote troubleshooting and system support
+</details>
 
-- CRM workflow design and automation
+---
 
-- IT support process documentation and knowledge base creation
+<details>
+<summary>Project Evidence / Proof of Work</summary>
 
+All evidence organized by project:
 
-### Contact
-Email: nnabueze014@gmail.com
-LinkedIn: 
-Location: Remote (Nigeria)
+- [Project 1 – Lead Automation](Projects/Project 1 - Lead Automation/evidence.md)  
+- [Project 2 – Ticket Automation](Projects/Project 2 - Ticket Automation/evidence.md) *(Future)*  
+- [Project 3 – CRM Sync](Projects/Project 3 - CRM Sync/evidence.md) *(Future)*
+
+</details>
+
+---
+
+<details>
+<summary>Contact</summary>
+
+**Email:** [nnabueze014@gmail.com](mailto:nnabueze014@gmail.com)  
+**LinkedIn:** [https://www.linkedin.com/in/yourprofile](https://www.linkedin.com/in/yourprofile)  
+**Location:** Remote (Nigeria)
+
+</details>
