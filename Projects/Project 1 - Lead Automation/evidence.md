@@ -1,6 +1,6 @@
 # Lead Automation – Proof of Work
 
-**...***
+**...**
 ## Google form (Client form)
 ![Form](Google-form.png)
 
