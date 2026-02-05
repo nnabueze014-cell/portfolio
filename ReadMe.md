@@ -51,14 +51,6 @@ End-to-end automation connecting Google Forms → Gmail → HubSpot → Asana �
 
 [View Project Evidence & Screenshots](Projects/Project 1 - Lead Automation/evidence.md)
 
-### ▶ Project 2 – Ticket Automation *(Future)*  
-- Description goes here  
-- Evidence to be added
-
-### ▶ Project 3 – CRM Sync *(Future)*  
-- Description goes here  
-- Evidence to be added
-
 </details>
 
 ---
@@ -69,8 +61,6 @@ End-to-end automation connecting Google Forms → Gmail → HubSpot → Asana �
 All evidence organized by project:
 
 - [Project 1 – Lead Automation](Projects/Project 1 - Lead Automation/evidence.md)  
-- [Project 2 – Ticket Automation](Projects/Project 2 - Ticket Automation/evidence.md) *(Future)*  
-- [Project 3 – CRM Sync](Projects/Project 3 - CRM Sync/evidence.md) *(Future)*
 
 </details>
 
@@ -80,7 +70,7 @@ All evidence organized by project:
 <summary>Contact</summary>
 
 **Email:** [nnabueze014@gmail.com](mailto:nnabueze014@gmail.com)  
-**LinkedIn:** [https://www.linkedin.com/in/yourprofile](https://www.linkedin.com/in/yourprofile)  
+**LinkedIn:**   
 **Location:** Remote (Nigeria)
 
 </details>
