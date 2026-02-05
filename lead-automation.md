@@ -7,7 +7,7 @@
 ![Google Sheet](Google-sheet.png)
 
 ## Gmail Appreciation Email
-![Gmail Message](Gmail-message.png)
+![Gmail Message](Gmail-message to form responder.png)
 
 ## HubSpot Contact Created
 ![HubSpot Contact](Hubspot-contact.png)
