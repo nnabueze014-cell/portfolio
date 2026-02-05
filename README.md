@@ -66,7 +66,7 @@ Zapier • Google Forms • Gmail • HubSpot • Asana • Slack
 ![Asana Task](Asana-task.png)
 
 ### Slack Team Notification
-![Slack Message](Slack-message.png)
+![Slack Message](Slack-notification.png)
 
 
 ### Professional Development & Learning Focus
