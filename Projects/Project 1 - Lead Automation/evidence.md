@@ -6,7 +6,7 @@
 
 **...**
 ## Zapier Workflow
-![Zapier](Zapier-workflow.png)
+![Zapier](Zapier-Workflow.png)
 
 **...**
 ## Google Sheet
