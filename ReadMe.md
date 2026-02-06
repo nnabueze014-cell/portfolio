@@ -16,6 +16,7 @@ Welcome to my professional portfolio! Explore each section below.
 <details>
 <summary>About Me / Career Summary</summary>
 
+
 **Name:** Nnabueze Omeke  
 
 **Career Goal:**  
