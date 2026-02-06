@@ -100,10 +100,19 @@ img {
     <h2 class="title">Projects</h2>
 
     <h3>Project 1 – Lead Automation</h3>
-    <p><strong>Project Goal:</strong> Automate lead collection and follow-up processes to reduce manual work and improve response time for incoming leads.</p>
-    <p><strong>How it was achieved:</strong> Connected Google Forms to Gmail to automatically capture incoming leads. The data was then sent to HubSpot CRM and Asana for task creation, followed by notifications in Slack for the team to act immediately.</p>
-    <p><strong>Tools used:</strong> Google Forms, Gmail, HubSpot CRM, Asana, Slack, Zapier.</p>
-    <a href="Projects/Project 1 - Lead Automation/evidence.html">View Project Evidence & Screenshots</a>
+<p><strong>Project Goal:</strong> Automate lead collection, follow-up, and team notifications to reduce manual effort and ensure timely responses to incoming leads.</p>
+<p><strong>How it was achieved:</strong> The automation was built using a no-code workflow on Zapier:</p>
+<ol>
+    <li>Deployed a Google Form to collect leads from users.</li>
+    <li>Form responses are automatically stored in Google Sheets.</li>
+    <li>Google Sheets is used as the trigger in the Zapier workflow.</li>
+    <li>When a new response is received, an automatic email is sent via Gmail to the responder to appreciate their submission.</li>
+    <li>A task is created in HubSpot for the incoming lead.</li>
+    <li>A follow-up task is automatically created to ensure timely follow-ups.</li>
+    <li>A notification is sent to the designated Slack channel to inform the team responsible for the follow-up.</li>
+</ol>
+<p><strong>Tools used:</strong> Google Forms, Google Sheets, Zapier, Gmail, HubSpot CRM, Slack.</p>
+<a href="Projects/Project 1 - Lead Automation/evidence.html">View Project Evidence & Screenshots</a>
 
     <h3>Project 2 – Ticket Automation (Future)</h3>
     <p>This project is in progress. Once completed, it will automate ticket creation, assignment, and status updates between email, CRM, and workflow tools to reduce manual effort and improve customer response times.</p>
