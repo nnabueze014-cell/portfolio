@@ -1,4 +1,4 @@
-# Nnabueze Omeke – IT Support & Automation Specialist
+# Chuks Steven – IT Support & Automation Specialist
 
 Welcome to my professional portfolio! Explore each section below.
 
@@ -18,10 +18,11 @@ Welcome to my professional portfolio! Explore each section below.
 
 **Name:** Chuks Steven  
 
-**Career Goal:** Secure a remote IT Support or Automation Specialist role before mid-year, leveraging workflow automation, troubleshooting, and CRM integrations to improve operational efficiency and customer satisfaction.
+**Career Goal:**  
+Secure a remote IT Support or Automation Specialist role before mid-year, leveraging workflow automation, troubleshooting, and CRM integrations to improve operational efficiency and customer satisfaction.
 
 **Professional Summary:**  
-Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing **no-code solutions** to reduce manual work, improve data accuracy, and streamline team operations. Adept at managing CRM systems, automating processes across Google Workspace, and collaborating effectively with teams to ensure timely follow-ups and user satisfaction.
+Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing no-code solutions to reduce manual work, improve data accuracy, and streamline team operations.
 
 </details>
 
@@ -30,14 +31,14 @@ Results-driven IT Support and Automation Specialist with hands-on experience in 
 <details>
 <summary>Skills</summary>
 
-- **IT Helpdesk & User Support**  
-- **Troubleshooting & Remote Support**  
-- **Zapier / No-Code Automation**  
-- **Google Workspace Administration**  
-- **HubSpot CRM Management**  
-- **Slack & Asana Workflow Automation**  
-- **Process Documentation & Reporting**  
-- **Customer Communication & Follow-Up**
+- IT Helpdesk & User Support  
+- Troubleshooting & Remote Support  
+- Zapier / No-Code Automation  
+- Google Workspace Administration  
+- HubSpot CRM Management  
+- Slack & Asana Workflow Automation  
+- Process Documentation & Reporting  
+- Customer Communication & Follow-Up  
 
 </details>
 
@@ -47,9 +48,12 @@ Results-driven IT Support and Automation Specialist with hands-on experience in 
 <summary>Projects</summary>
 
 ### ▶ Project 1 – Lead Automation
-End-to-end automation connecting Google Forms → Gmail → HubSpot → Asana → Slack.
 
-[View Project Evidence & Screenshots](Projects/Project 1 - Lead Automation/evidence.md)
+End-to-end automation connecting:
+
+Google Forms → Gmail → HubSpot → Asana → Slack
+
+👉 **[View Project Evidence & Screenshots](Projects/Project 1 - Lead Automation/evidence.html)**
 
 </details>
 
@@ -59,7 +63,7 @@ End-to-end automation connecting Google Forms → Gmail → HubSpot → Asana �
 <summary>Contact</summary>
 
 **Email:** [nnabueze014@gmail.com](mailto:nnabueze014@gmail.com)  
-**LinkedIn:**  
+**LinkedIn:** https://www.linkedin.com/in/yourprofile  
 **Location:** Remote (Nigeria)
 
 </details>
