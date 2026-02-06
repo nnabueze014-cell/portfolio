@@ -78,7 +78,8 @@ img {
 <div id="about" class="section">
     <h1 class="title">Nnabueze Omeke</h1>
     <h3>IT Support & Automation Specialist</h3>
-    <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role before mid-year...</p>
+    <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role before mid-year, leveraging workflow automation, troubleshooting, and CRM integrations to improve operational efficiency and customer satisfaction.</p>
+    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing no-code solutions to reduce manual work, improve data accuracy, and streamline team operations. Adept at managing CRM systems, automating processes across Google Workspace, and collaborating effectively with teams to ensure timely follow-ups and user satisfaction.</p>
 </div>
 
 <div id="skills" class="section">
@@ -89,18 +90,31 @@ img {
         <li>Zapier / No-Code Automation</li>
         <li>Google Workspace Administration</li>
         <li>HubSpot CRM Management</li>
-        <li>Workflow & Automation Tools</li>
+        <li>Slack & Workflow Management & Automation</li>
+        <li>Process Documentation & Reporting</li>
+        <li>Customer Communication & Follow-Up</li>
     </ul>
 </div>
 
 <div id="projects" class="section">
     <h2 class="title">Projects</h2>
-    <p>Project 1 – Lead Automation</p>
+
+    <h3>Project 1 – Lead Automation</h3>
+    <p>End-to-end automation connecting Google Forms → Gmail → HubSpot → Asana → Slack. This project streamlined lead collection and follow-up tasks for faster team response and improved data tracking.</p>
+    <a href="Projects/Project 1 - Lead Automation/evidence.html">View Project Evidence & Screenshots</a>
+
+    <h3>Project 2 – Ticket Automation (Future)</h3>
+    <p>This project is in progress. Once completed, it will automate ticket creation, assignment, and status updates between email, CRM, and workflow tools to reduce manual effort and improve customer response times.</p>
+
+    <h3>Project 3 – CRM Sync (Future)</h3>
+    <p>This project is in progress. It will synchronize data between multiple CRMs and reporting tools, ensuring teams have accurate, up-to-date information in real-time.</p>
 </div>
 
 <div id="contact" class="section">
     <h2 class="title">Contact</h2>
-    <p>Email: nnabueze014@gmail.com</p>
+    <p><strong>Email:</strong> <a href="mailto:nnabueze014@gmail.com">nnabueze014@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nnabueze" target="_blank">www.linkedin.com/in/nnabueze</a></p>
+    <p><strong>Location:</strong> Remote (Nigeria)</p>
 </div>
 </main>
 
@@ -132,18 +146,15 @@ function highlightSection(sectionIndex) {
     }, 1000);
 }
 
-// Click behavior (jump instantly, no smooth scroll)
+// Click behavior (instant jump)
 navLinks.forEach((link, index) => {
     link.addEventListener('click', e => {
         e.preventDefault();
         const section = sections[index];
-        // Instant jump
         window.scrollTo(0, section.offsetTop);
         highlightSection(index);
     });
 });
-
-// Optional: you can remove the scroll listener entirely if you want clicks only
 </script>
 </body>
 </html>
