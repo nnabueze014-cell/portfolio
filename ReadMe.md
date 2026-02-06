@@ -64,7 +64,7 @@ Google Forms → Gmail → HubSpot → Asana → Slack
 <summary>Contact</summary>
 
 **Email:** [nnabueze014@gmail.com](mailto:nnabueze014@gmail.com)  
-**LinkedIn:**   
+**LinkedIn:** [www.linkedin.com/in/nnabueze](www.linkedin.com/in/nnabueze)  
 **Location:** Remote (Nigeria)
 
 </details>
