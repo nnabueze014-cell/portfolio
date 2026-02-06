@@ -28,10 +28,10 @@ nav a {
     padding: 10px 20px;
     margin: 5px 0;
     border-radius: 5px;
-    transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s;
 }
 nav a.active {
-    color: #ffeb3b; /* Nav tab highlight */
+    color: #ffeb3b; /* nav highlight */
     font-weight: bold;
 }
 main {
@@ -40,7 +40,7 @@ main {
     max-width: 800px;
 }
 h1, h2, h3 {
-    color: #1e1e2f; /* default title color */
+    color: #1e1e2f;
     transition: color 0.3s;
 }
 img {
@@ -56,8 +56,8 @@ img {
 
 /* Flash animation for titles */
 @keyframes flashTitle {
-    0%   { color: #fff176; }
-    50%  { color: #1e1e2f; }
+    0% { color: #fff176; }
+    50% { color: #1e1e2f; }
     100% { color: #fff176; }
 }
 .flash {
@@ -79,7 +79,6 @@ img {
     <h1 class="title">Nnabueze Omeke</h1>
     <h3>IT Support & Automation Specialist</h3>
     <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role before mid-year...</p>
-    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist...</p>
 </div>
 
 <div id="skills" class="section">
@@ -90,28 +89,18 @@ img {
         <li>Zapier / No-Code Automation</li>
         <li>Google Workspace Administration</li>
         <li>HubSpot CRM Management</li>
-        <li>Slack & Workflow Management & Automation</li>
-        <li>Process Documentation & Reporting</li>
-        <li>Customer Communication & Follow-Up</li>
+        <li>Workflow & Automation Tools</li>
     </ul>
 </div>
 
 <div id="projects" class="section">
     <h2 class="title">Projects</h2>
-    <h3>Project 1 – Lead Automation</h3>
-    <p>End-to-end automation connecting Google Forms → Gmail → HubSpot → Asana → Slack.</p>
-    <a href="Projects/Project 1 - Lead Automation/evidence.html">View Project Evidence & Screenshots</a>
-    <h3>Project 2 – Ticket Automation (Future)</h3>
-    <p>Work in progress.</p>
-    <h3>Project 3 – CRM Sync (Future)</h3>
-    <p>Work in progress.</p>
+    <p>Project 1 – Lead Automation</p>
 </div>
 
 <div id="contact" class="section">
     <h2 class="title">Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:nnabueze014@gmail.com">nnabueze014@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="mailto:www.linkedin.com/in/nnabueze">www.linkedin.com/in/nnabueze</a></p>
-    <p><strong>Location:</strong> Remote (Nigeria)</p>
+    <p>Email: nnabueze014@gmail.com</p>
 </div>
 </main>
 
@@ -119,59 +108,42 @@ img {
 const navLinks = document.querySelectorAll('nav a');
 const sections = document.querySelectorAll('.section');
 
-// Remove previous highlights
-function removeHighlights() {
+// Clear previous highlights
+function clearHighlights() {
     document.querySelectorAll('.title').forEach(title => title.style.color = '#1e1e2f');
     navLinks.forEach(link => link.classList.remove('active'));
 }
 
-// Flash title (then stay yellow) & highlight nav
-function flashTitle(titleElement, navLink) {
-    navLink.classList.add('active'); // nav tab stays yellow immediately
-    titleElement.classList.add('flash'); // start flash
+// Flash title and highlight nav
+function highlightSection(sectionIndex) {
+    clearHighlights();
+    const section = sections[sectionIndex];
+    const navLink = navLinks[sectionIndex];
+    const title = section.querySelector('.title');
+
+    // Highlight nav instantly
+    navLink.classList.add('active');
+
+    // Flash title
+    title.classList.add('flash');
     setTimeout(() => {
-        titleElement.classList.remove('flash'); // remove animation
-        titleElement.style.color = '#ffeb3b'; // stay yellow
-    }, 1000); // match flash duration
+        title.classList.remove('flash');
+        title.style.color = '#ffeb3b'; // stay yellow
+    }, 1000);
 }
 
-// Nav click behavior
-navLinks.forEach(link => {
+// Click behavior (jump instantly, no smooth scroll)
+navLinks.forEach((link, index) => {
     link.addEventListener('click', e => {
         e.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-        const title = targetSection.querySelector('.title');
-
-        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-        flashTitle(title, link);
-
-        // Remove other nav highlights
-        navLinks.forEach(a => {
-            if(a !== link) a.classList.remove('active');
-        });
+        const section = sections[index];
+        // Instant jump
+        window.scrollTo(0, section.offsetTop);
+        highlightSection(index);
     });
 });
 
-// Highlight on manual scroll
-window.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY + window.innerHeight / 2;
-    sections.forEach((section, index) => {
-        const secTop = section.offsetTop;
-        const secBottom = section.offsetTop + section.offsetHeight;
-        if(scrollPosition >= secTop && scrollPosition < secBottom){
-            const title = section.querySelector('.title');
-            const navLink = navLinks[index];
-            flashTitle(title, navLink);
-
-            // Remove highlights from other nav links
-            navLinks.forEach(a => {
-                if(a !== navLink) a.classList.remove('active');
-            });
-        }
-    });
-});
+// Optional: you can remove the scroll listener entirely if you want clicks only
 </script>
 </body>
 </html>
