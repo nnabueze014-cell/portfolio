@@ -1,4 +1,4 @@
-# Chuks Steven – IT Support & Automation Specialist
+# Nnabueze Omeke – IT Support & Automation Specialist
 
 Welcome to my professional portfolio! Explore each section below.
 
@@ -16,7 +16,7 @@ Welcome to my professional portfolio! Explore each section below.
 <details>
 <summary>About Me / Career Summary</summary>
 
-**Name:** Chuks Steven  
+**Name:** Nnabueze Omeke  
 
 **Career Goal:**  
 Secure a remote IT Support or Automation Specialist role before mid-year, leveraging workflow automation, troubleshooting, and CRM integrations to improve operational efficiency and customer satisfaction.
