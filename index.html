@@ -47,14 +47,15 @@ nav a {
     transition: all 0.3s ease;
 }
 
+/* Hover */
 nav a:hover {
-    background: rgba(37, 99, 235, 0.15);
-    color: #2563eb;
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
 }
 
-/* ACTIVE TAB */
+/* ACTIVE NAV TAB */
 nav a.active {
-    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+    background: #10b981;
     color: white;
     font-weight: 600;
 }
@@ -72,40 +73,28 @@ main {
     border-radius: 16px;
     margin-bottom: 60px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
 }
 
-h1 {
-    font-size: 34px;
-    margin-bottom: 10px;
-    color: #111827;
+/* ACTIVE SECTION HIGHLIGHT */
+.section.active-section {
+    background: #ecfdf5;
+    border-left: 6px solid #10b981;
+    transform: scale(1.01);
 }
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #1f2937;
-}
+/* Headings */
+h1 { font-size: 34px; margin-bottom: 10px; color: #111827; }
+h2 { font-size: 24px; margin-bottom: 20px; color: #1f2937; }
+h3 { font-size: 18px; color: #4b5563; margin-bottom: 15px; }
 
-h3 {
-    font-size: 18px;
-    color: #4b5563;
-    margin-bottom: 15px;
-}
+p { text-align: justify; margin-bottom: 15px; }
 
-p {
-    text-align: justify;
-    margin-bottom: 15px;
-}
+ul, ol { padding-left: 25px; }
 
-ul, ol {
-    padding-left: 25px;
-}
+li { margin-bottom: 8px; text-align: justify; }
 
-li {
-    margin-bottom: 8px;
-    text-align: justify;
-}
-
+/* Buttons remain blue */
 .btn {
     display: inline-block;
     padding: 12px 20px;
@@ -120,14 +109,6 @@ li {
 .btn:hover {
     background: #1d4ed8;
     transform: translateY(-2px);
-}
-
-a {
-    color: #2563eb;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /* Responsive */
@@ -161,11 +142,8 @@ a:hover {
 <div id="about" class="section">
     <h1>Nnabueze Omeke</h1>
     <h3>IT Support & Automation Specialist</h3>
-
-    <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role before mid-year, leveraging workflow automation, troubleshooting, and CRM integrations to improve operational efficiency and customer satisfaction.</p>
-
-    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing no-code solutions to reduce manual work, improve data accuracy, and streamline team operations.</p>
-
+    <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role before mid-year.</p>
+    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience in workflow integrations and CRM automation.</p>
     <a href="assets/Nnabueze_Omeke_IT_Support_CV.pdf" class="btn" download>
         Download CV
     </a>
@@ -180,38 +158,19 @@ a:hover {
         <li>Google Workspace Administration</li>
         <li>HubSpot CRM Management</li>
         <li>Slack Workflow Automation</li>
-        <li>Process Documentation & Reporting</li>
-        <li>Customer Communication & Follow-Up</li>
     </ul>
 </div>
 
 <div id="projects" class="section">
     <h2>Projects</h2>
-
     <h3>Project 1 – Lead Automation</h3>
-
-    <p><strong>Project Goal:</strong> Automate lead collection and follow-up processes.</p>
-
-    <ol>
-        <li>Google Form for lead capture.</li>
-        <li>Auto storage in Google Sheets.</li>
-        <li>Zapier automation trigger.</li>
-        <li>Gmail automated email.</li>
-        <li>HubSpot task creation.</li>
-        <li>Asana follow-up task.</li>
-        <li>Slack team notification.</li>
-    </ol>
-
-    <a href="Projects/Project 1 - Lead Automation/evidence.html" class="btn">
-        View Project Evidence
-    </a>
+    <p>Automated lead collection and follow-up processes using Zapier.</p>
 </div>
 
 <div id="contact" class="section">
     <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:nnabueze014@gmail.com">nnabueze014@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nnabueze" target="_blank">www.linkedin.com/in/nnabueze</a></p>
-    <p><strong>Location:</strong> Remote (Nigeria)</p>
+    <p>Email: nnabueze014@gmail.com</p>
+    <p>Location: Remote (Nigeria)</p>
 </div>
 
 </main>
@@ -220,28 +179,38 @@ a:hover {
 const sections = document.querySelectorAll(".section");
 const navLinks = document.querySelectorAll("nav a");
 
-function setActiveLink() {
+function activateSection() {
     let current = "";
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 150;
-        const sectionBottom = sectionTop + section.offsetHeight;
+        const sectionTop = section.offsetTop - 200;
+        const sectionHeight = section.offsetHeight;
 
-        if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+        if (window.scrollY >= sectionTop &&
+            window.scrollY < sectionTop + sectionHeight) {
             current = section.getAttribute("id");
         }
     });
 
+    // NAV highlight
     navLinks.forEach(link => {
         link.classList.remove("active");
         if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
         }
     });
+
+    // SECTION highlight
+    sections.forEach(section => {
+        section.classList.remove("active-section");
+        if (section.getAttribute("id") === current) {
+            section.classList.add("active-section");
+        }
+    });
 }
 
-window.addEventListener("scroll", setActiveLink);
+window.addEventListener("scroll", activateSection);
 </script>
 
 </body>
-</html>..   And
+</html>
