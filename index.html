@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -45,10 +49,17 @@ nav a {
     transition: all 0.3s ease;
 }
 
+/* Hover effect */
 nav a:hover {
-    background: rgba(255,255,255,0.08);
+    background: rgba(37, 99, 235, 0.15);
+    color: #2563eb;
+}
+
+/* Active link highlight */
+nav a.active {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
     color: white;
-    transform: translateX(5px);
+    font-weight: 600;
 }
 
 /* ================= MAIN ================= */
@@ -143,34 +154,11 @@ a:hover {
 </style>
 </head>
 
-    <script>
-const sections = document.querySelectorAll("section, .section");
-const navLinks = document.querySelectorAll("nav a");
-
-window.addEventListener("scroll", () => {
-    let current = "";
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 150;
-        if (scrollY >= sectionTop) {
-            current = section.getAttribute("id");
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(current)) {
-            link.classList.add("active");
-        }
-    });
-});
-</script>
-    
 <body>
 
 <nav>
     <h2>Portfolio</h2>
-    <a href="#about">About Me</a>
+    <a href="#about" class="active">About Me</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
@@ -178,7 +166,6 @@ window.addEventListener("scroll", () => {
 
 <main>
 
-<!-- ABOUT -->
 <div id="about" class="section">
     <h1>Nnabueze Omeke</h1>
     <h3>IT Support & Automation Specialist</h3>
@@ -188,11 +175,10 @@ window.addEventListener("scroll", () => {
     <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing no-code solutions to reduce manual work, improve data accuracy, and streamline team operations. Adept at managing CRM systems, automating processes across Google Workspace, and collaborating effectively with teams to ensure timely follow-ups and user satisfaction.</p>
 
     <a href="Asset/Nnabueze_Omeke_IT_Support_CV.pdf" class="btn" download>
-    Download CV
-</a>
+        Download CV
+    </a>
 </div>
 
-<!-- SKILLS -->
 <div id="skills" class="section">
     <h2>Core Skills</h2>
     <ul>
@@ -207,7 +193,6 @@ window.addEventListener("scroll", () => {
     </ul>
 </div>
 
-<!-- PROJECTS -->
 <div id="projects" class="section">
     <h2>Projects</h2>
 
@@ -233,7 +218,6 @@ window.addEventListener("scroll", () => {
     </a>
 </div>
 
-<!-- CONTACT -->
 <div id="contact" class="section">
     <h2>Contact</h2>
     <p><strong>Email:</strong> <a href="mailto:nnabueze014@gmail.com">nnabueze014@gmail.com</a></p>
@@ -242,6 +226,29 @@ window.addEventListener("scroll", () => {
 </div>
 
 </main>
+
+<script>
+const sections = document.querySelectorAll(".section");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 200;
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
 
 </body>
 </html>
