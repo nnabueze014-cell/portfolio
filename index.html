@@ -4,68 +4,152 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nnabueze Omeke – Portfolio</title>
+
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     margin: 0;
     display: flex;
+    background-color: #f8f9fb;
+    color: #333;
+    line-height: 1.7;
 }
+
+/* ---------------- NAVIGATION ---------------- */
 nav {
     width: 250px;
     background-color: #1e1e2f;
     color: white;
     height: 100vh;
     position: fixed;
-    padding-top: 20px;
+    padding-top: 30px;
 }
+
 nav h2 {
-    padding-left:20px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
 }
+
 nav a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     margin: 5px 0;
     border-radius: 5px;
-    transition: color 0.3s;
-}
-nav a.active {
-    color: #ffeb3b; /* nav highlight */
-    font-weight: bold;
-}
-main {
-    margin-left: 250px;
-    padding: 20px;
-    max-width: 800px;
-}
-h1, h2, h3 {
-    color: #1e1e2f;
-    transition: color 0.3s;
-}
-img {
-    max-width: 100%;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-.section {
-    margin-bottom: 3em; /* 3-line spacing */
-    padding: 20px 0;
+    transition: 0.3s ease;
 }
 
-/* Flash animation for titles */
+nav a:hover {
+    background-color: rgba(255,255,255,0.08);
+}
+
+nav a.active {
+    color: #ffeb3b;
+    font-weight: bold;
+}
+
+/* ---------------- MAIN CONTENT ---------------- */
+main {
+    margin-left: 250px;
+    padding: 50px 60px;
+    max-width: 900px;
+}
+
+/* Titles */
+h1, h2, h3 {
+    color: #1e1e2f;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Paragraph formatting */
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Links */
+a {
+    color: #1e1e2f;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Flash animation */
 @keyframes flashTitle {
     0% { color: #fff176; }
     50% { color: #1e1e2f; }
     100% { color: #fff176; }
 }
+
 .flash {
     animation: flashTitle 1s ease;
 }
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 900px) {
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 30px 20px;
+    }
+}
 </style>
 </head>
+
 <body>
+
 <nav>
     <h2>Portfolio</h2>
     <a href="#about">About Me</a>
@@ -75,7 +159,7 @@ img {
 </nav>
 
 <main>
-<!-- About Section -->
+
 <div id="about" class="section">
     <h1 class="title">Nnabueze Omeke</h1>
     <h3>IT Support & Automation Specialist</h3>
@@ -83,7 +167,6 @@ img {
     <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing no-code solutions to reduce manual work, improve data accuracy, and streamline team operations. Adept at managing CRM systems, automating processes across Google Workspace, and collaborating effectively with teams to ensure timely follow-ups and user satisfaction.</p>
 </div>
 
-<!-- Skills Section -->
 <div id="skills" class="section">
     <h2 class="title">Skills</h2>
     <ul>
@@ -92,79 +175,44 @@ img {
         <li>Zapier / No-Code Automation</li>
         <li>Google Workspace Administration</li>
         <li>HubSpot CRM Management</li>
-        <li>Slack & Workflow Management & Automation</li>
+        <li>Slack Workflow Automation</li>
         <li>Process Documentation & Reporting</li>
         <li>Customer Communication & Follow-Up</li>
     </ul>
 </div>
 
-<!-- Projects Section -->
 <div id="projects" class="section">
     <h2 class="title">Projects</h2>
 
-    <!-- Project 1 -->
     <h3>Project 1 – Lead Automation</h3>
     <p><strong>Project Goal:</strong> Automate lead collection, follow-up, and team notifications to reduce manual effort and ensure timely responses to incoming leads.</p>
-    <p><strong>How it was achieved:</strong> The automation was built using a no-code workflow on Zapier:</p>
+
+    <p><strong>How it was achieved:</strong></p>
     <ol>
         <li>Deployed a Google Form to collect leads from users.</li>
-        <li>Form responses are automatically stored in Google Sheets(DATABASE).</li>
+        <li>Form responses are automatically stored in Google Sheets (Database).</li>
         <li>Google Sheets is used as the trigger in the Zapier workflow.</li>
-        <li>When a new response is received, an automatic email is sent via Gmail to the responder to appreciate their submission.</li>
+        <li>An automatic appreciation email is sent via Gmail.</li>
         <li>A task is created in HubSpot for the incoming lead.</li>
-        <li>A follow-up task is automatically created on Asana to ensure timely follow-ups.</li>
-        <li>A notification is sent to the designated Slack channel to inform the team responsible for the follow-up.</li>
+        <li>A follow-up task is automatically created in Asana.</li>
+        <li>A Slack notification alerts the responsible team.</li>
     </ol>
-    <p><strong>Tools used:</strong> Google Forms, Google Sheets, Zapier, Gmail, HubSpot CRM, Slack.</p>
-    <a href="Projects/Project 1 - Lead Automation/evidence.html">View Project Evidence & Screenshots</a>
+
+    <p><strong>Tools Used:</strong> Google Forms, Google Sheets, Zapier, Gmail, HubSpot CRM, Slack, Asana.</p>
+
+    <a href="Projects/Project 1 - Lead Automation/evidence.html">
+        View Project Evidence & Screenshots
+    </a>
 </div>
 
-<!-- Contact Section -->
 <div id="contact" class="section">
     <h2 class="title">Contact</h2>
     <p><strong>Email:</strong> <a href="mailto:nnabueze014@gmail.com">nnabueze014@gmail.com</a></p>
     <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nnabueze" target="_blank">www.linkedin.com/in/nnabueze</a></p>
     <p><strong>Location:</strong> Remote (Nigeria)</p>
 </div>
+
 </main>
 
-<script>
-const navLinks = document.querySelectorAll('nav a');
-const sections = document.querySelectorAll('.section');
-
-// Clear previous highlights
-function clearHighlights() {
-    document.querySelectorAll('.title').forEach(title => title.style.color = '#1e1e2f');
-    navLinks.forEach(link => link.classList.remove('active'));
-}
-
-// Flash title and highlight nav
-function highlightSection(sectionIndex) {
-    clearHighlights();
-    const section = sections[sectionIndex];
-    const navLink = navLinks[sectionIndex];
-    const title = section.querySelector('.title');
-
-    // Highlight nav instantly
-    navLink.classList.add('active');
-
-    // Flash title
-    title.classList.add('flash');
-    setTimeout(() => {
-        title.classList.remove('flash');
-        title.style.color = '#ffeb3b'; // stay yellow
-    }, 1000);
-}
-
-// Click behavior (instant jump)
-navLinks.forEach((link, index) => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
-        const section = sections[index];
-        window.scrollTo(0, section.offsetTop);
-        highlightSection(index);
-    });
-});
-</script>
 </body>
 </html>
