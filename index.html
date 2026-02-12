@@ -11,86 +11,89 @@
 }
 
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
     margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
     display: flex;
-    background-color: #f8f9fb;
+    background: linear-gradient(to right, #f4f6fb, #eef1f7);
     color: #333;
     line-height: 1.7;
 }
 
-/* ---------------- NAVIGATION ---------------- */
+/* ================= NAVIGATION ================= */
 nav {
-    width: 250px;
-    background-color: #1e1e2f;
+    width: 260px;
+    background: #111827;
     color: white;
     height: 100vh;
     position: fixed;
-    padding-top: 30px;
+    padding: 40px 20px;
 }
 
 nav h2 {
-    padding-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 nav a {
     display: block;
-    color: white;
     text-decoration: none;
-    padding: 12px 20px;
-    margin: 5px 0;
-    border-radius: 5px;
-    transition: 0.3s ease;
+    color: #cbd5e1;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background-color: rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.08);
+    color: white;
+    transform: translateX(5px);
 }
 
-nav a.active {
-    color: #ffeb3b;
-    font-weight: bold;
-}
-
-/* ---------------- MAIN CONTENT ---------------- */
+/* ================= MAIN ================= */
 main {
-    margin-left: 250px;
-    padding: 50px 60px;
-    max-width: 900px;
+    margin-left: 260px;
+    padding: 60px 80px;
+    max-width: 1000px;
 }
 
-/* Titles */
-h1, h2, h3 {
-    color: #1e1e2f;
-    margin-bottom: 10px;
+/* Section Card */
+.section {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
+/* Headings */
 h1 {
-    font-size: 32px;
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #111827;
 }
 
 h2 {
     font-size: 24px;
-    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #1f2937;
 }
 
 h3 {
     font-size: 18px;
-    color: #555;
+    color: #4b5563;
+    margin-bottom: 15px;
 }
 
-/* Paragraph formatting */
+/* Text */
 p {
     text-align: justify;
     margin-bottom: 15px;
 }
 
-/* Lists */
 ul, ol {
     padding-left: 25px;
-    margin-bottom: 20px;
 }
 
 li {
@@ -98,46 +101,38 @@ li {
     text-align: justify;
 }
 
-/* Sections */
-.section {
-    margin-bottom: 60px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e0e0e0;
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
 }
 
 /* Links */
 a {
-    color: #1e1e2f;
+    color: #2563eb;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Flash animation */
-@keyframes flashTitle {
-    0% { color: #fff176; }
-    50% { color: #1e1e2f; }
-    100% { color: #fff176; }
-}
-
-.flash {
-    animation: flashTitle 1s ease;
-}
-
-/* Smooth scroll */
-html {
-    scroll-behavior: smooth;
-}
-
-/* ---------------- RESPONSIVE ---------------- */
+/* Responsive */
 @media (max-width: 900px) {
     nav {
         position: relative;
         width: 100%;
         height: auto;
-        padding: 15px 0;
-        text-align: center;
     }
 
     main {
@@ -160,15 +155,21 @@ html {
 
 <main>
 
+<!-- ABOUT -->
 <div id="about" class="section">
-    <h1 class="title">Nnabueze Omeke</h1>
+    <h1>Nnabueze Omeke</h1>
     <h3>IT Support & Automation Specialist</h3>
+
     <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role before mid-year, leveraging workflow automation, troubleshooting, and CRM integrations to improve operational efficiency and customer satisfaction.</p>
+
     <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing no-code solutions to reduce manual work, improve data accuracy, and streamline team operations. Adept at managing CRM systems, automating processes across Google Workspace, and collaborating effectively with teams to ensure timely follow-ups and user satisfaction.</p>
+
+    <a href="#" class="btn">Download CV</a>
 </div>
 
+<!-- SKILLS -->
 <div id="skills" class="section">
-    <h2 class="title">Skills</h2>
+    <h2>Core Skills</h2>
     <ul>
         <li>IT Helpdesk & User Support</li>
         <li>Troubleshooting & Remote Support</li>
@@ -181,32 +182,35 @@ html {
     </ul>
 </div>
 
+<!-- PROJECTS -->
 <div id="projects" class="section">
-    <h2 class="title">Projects</h2>
+    <h2>Projects</h2>
 
     <h3>Project 1 – Lead Automation</h3>
-    <p><strong>Project Goal:</strong> Automate lead collection, follow-up, and team notifications to reduce manual effort and ensure timely responses to incoming leads.</p>
 
-    <p><strong>How it was achieved:</strong></p>
+    <p><strong>Project Goal:</strong> Automate lead collection, follow-up, and team notifications to reduce manual effort and ensure timely responses.</p>
+
+    <p><strong>Implementation:</strong></p>
     <ol>
-        <li>Deployed a Google Form to collect leads from users.</li>
-        <li>Form responses are automatically stored in Google Sheets (Database).</li>
-        <li>Google Sheets is used as the trigger in the Zapier workflow.</li>
-        <li>An automatic appreciation email is sent via Gmail.</li>
-        <li>A task is created in HubSpot for the incoming lead.</li>
-        <li>A follow-up task is automatically created in Asana.</li>
-        <li>A Slack notification alerts the responsible team.</li>
+        <li>Created Google Form for lead capture.</li>
+        <li>Stored responses automatically in Google Sheets (database).</li>
+        <li>Triggered Zapier workflow from Sheets.</li>
+        <li>Sent automated Gmail appreciation email.</li>
+        <li>Created task in HubSpot CRM.</li>
+        <li>Generated follow-up task in Asana.</li>
+        <li>Sent Slack notification to responsible team.</li>
     </ol>
 
     <p><strong>Tools Used:</strong> Google Forms, Google Sheets, Zapier, Gmail, HubSpot CRM, Slack, Asana.</p>
 
-    <a href="Projects/Project 1 - Lead Automation/evidence.html">
-        View Project Evidence & Screenshots
+    <a href="Projects/Project 1 - Lead Automation/evidence.html" class="btn">
+        View Project Evidence
     </a>
 </div>
 
+<!-- CONTACT -->
 <div id="contact" class="section">
-    <h2 class="title">Contact</h2>
+    <h2>Contact</h2>
     <p><strong>Email:</strong> <a href="mailto:nnabueze014@gmail.com">nnabueze014@gmail.com</a></p>
     <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nnabueze" target="_blank">www.linkedin.com/in/nnabueze</a></p>
     <p><strong>Location:</strong> Remote (Nigeria)</p>
