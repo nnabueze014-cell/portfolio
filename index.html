@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -19,7 +23,7 @@ body {
     line-height: 1.7;
 }
 
-/* ================= NAVIGATION ================= */
+/* ================= NAV ================= */
 nav {
     width: 260px;
     background: #111827;
@@ -31,8 +35,6 @@ nav {
 
 nav h2 {
     margin-bottom: 40px;
-    font-weight: 600;
-    letter-spacing: 1px;
 }
 
 nav a {
@@ -46,9 +48,15 @@ nav a {
 }
 
 nav a:hover {
-    background: rgba(255,255,255,0.08);
+    background: rgba(37, 99, 235, 0.15);
+    color: #2563eb;
+}
+
+/* ACTIVE TAB */
+nav a.active {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
     color: white;
-    transform: translateX(5px);
+    font-weight: 600;
 }
 
 /* ================= MAIN ================= */
@@ -58,16 +66,14 @@ main {
     max-width: 1000px;
 }
 
-/* Section Card */
 .section {
     background: white;
     padding: 40px;
     border-radius: 16px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* Headings */
 h1 {
     font-size: 34px;
     margin-bottom: 10px;
@@ -86,7 +92,6 @@ h3 {
     margin-bottom: 15px;
 }
 
-/* Text */
 p {
     text-align: justify;
     margin-bottom: 15px;
@@ -101,7 +106,6 @@ li {
     text-align: justify;
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     padding: 12px 20px;
@@ -118,7 +122,6 @@ li {
     transform: translateY(-2px);
 }
 
-/* Links */
 a {
     color: #2563eb;
 }
@@ -147,7 +150,7 @@ a:hover {
 
 <nav>
     <h2>Portfolio</h2>
-    <a href="#about">About Me</a>
+    <a href="#about" class="active">About Me</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
@@ -155,21 +158,19 @@ a:hover {
 
 <main>
 
-<!-- ABOUT -->
 <div id="about" class="section">
     <h1>Nnabueze Omeke</h1>
     <h3>IT Support & Automation Specialist</h3>
 
     <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role before mid-year, leveraging workflow automation, troubleshooting, and CRM integrations to improve operational efficiency and customer satisfaction.</p>
 
-    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing no-code solutions to reduce manual work, improve data accuracy, and streamline team operations. Adept at managing CRM systems, automating processes across Google Workspace, and collaborating effectively with teams to ensure timely follow-ups and user satisfaction.</p>
+    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing no-code solutions to reduce manual work, improve data accuracy, and streamline team operations.</p>
 
-    <a href="Asset/Nnabueze_Omeke_CV.pdf" class="btn" download>
-    Download CV
-</a>
+    <a href="assets/Nnabueze_Omeke_IT_Support_CV.pdf" class="btn" download>
+        Download CV
+    </a>
 </div>
 
-<!-- SKILLS -->
 <div id="skills" class="section">
     <h2>Core Skills</h2>
     <ul>
@@ -184,33 +185,28 @@ a:hover {
     </ul>
 </div>
 
-<!-- PROJECTS -->
 <div id="projects" class="section">
     <h2>Projects</h2>
 
     <h3>Project 1 – Lead Automation</h3>
 
-    <p><strong>Project Goal:</strong> Automate lead collection, follow-up, and team notifications to reduce manual effort and ensure timely responses.</p>
+    <p><strong>Project Goal:</strong> Automate lead collection and follow-up processes.</p>
 
-    <p><strong>Implementation:</strong></p>
     <ol>
-        <li>Created Google Form for lead capture.</li>
-        <li>Stored responses automatically in Google Sheets (database).</li>
-        <li>Triggered Zapier workflow from Sheets.</li>
-        <li>Sent automated Gmail appreciation email.</li>
-        <li>Created task in HubSpot CRM.</li>
-        <li>Generated follow-up task in Asana.</li>
-        <li>Sent Slack notification to responsible team.</li>
+        <li>Google Form for lead capture.</li>
+        <li>Auto storage in Google Sheets.</li>
+        <li>Zapier automation trigger.</li>
+        <li>Gmail automated email.</li>
+        <li>HubSpot task creation.</li>
+        <li>Asana follow-up task.</li>
+        <li>Slack team notification.</li>
     </ol>
-
-    <p><strong>Tools Used:</strong> Google Forms, Google Sheets, Zapier, Gmail, HubSpot CRM, Slack, Asana.</p>
 
     <a href="Projects/Project 1 - Lead Automation/evidence.html" class="btn">
         View Project Evidence
     </a>
 </div>
 
-<!-- CONTACT -->
 <div id="contact" class="section">
     <h2>Contact</h2>
     <p><strong>Email:</strong> <a href="mailto:nnabueze014@gmail.com">nnabueze014@gmail.com</a></p>
@@ -220,5 +216,32 @@ a:hover {
 
 </main>
 
+<script>
+const sections = document.querySelectorAll(".section");
+const navLinks = document.querySelectorAll("nav a");
+
+function setActiveLink() {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", setActiveLink);
+</script>
+
 </body>
-</html>
+</html>..   And
