@@ -120,17 +120,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Flash animation */
-@keyframes flashTitle {
-    0% { color: #fff176; }
-    50% { color: #1e1e2f; }
-    100% { color: #fff176; }
-}
-
-.flash {
-    animation: flashTitle 1s ease;
-}
-
 /* Smooth scroll */
 html {
     scroll-behavior: smooth;
@@ -167,52 +156,83 @@ html {
 <main>
 
 <div id="about" class="section">
-    <h1 class="title">Nnabueze Omeke</h1>
+    <h1>Nnabueze Omeke</h1>
     <h3>IT Support & Automation Specialist</h3>
-    <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role before mid-year, leveraging workflow automation, troubleshooting, and CRM integrations to improve operational efficiency and customer satisfaction.</p>
-    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience in end-to-end business workflow integrations. Skilled in designing no-code solutions to reduce manual work, improve data accuracy, and streamline team operations. Adept at managing CRM systems, automating processes across Google Workspace, and collaborating effectively with teams to ensure timely follow-ups and user satisfaction.</p>
+    <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role, leveraging workflow automation, CRM integrations, and technical support systems to improve operational efficiency and service delivery.</p>
+    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience building real-world internal support systems. Skilled in automating ticket workflows, integrating CRM platforms, setting SLAs, and improving response time through no-code and low-code solutions.</p>
 </div>
 
 <div id="skills" class="section">
-    <h2 class="title">Skills</h2>
+    <h2>Skills</h2>
     <ul>
         <li>IT Helpdesk & User Support</li>
-        <li>Troubleshooting & Remote Support</li>
-        <li>Zapier / No-Code Automation</li>
+        <li>Freshdesk Ticketing Systems</li>
+        <li>Zapier Automation & Webhooks</li>
+        <li>ClickUp Task & SLA Management</li>
         <li>Google Workspace Administration</li>
-        <li>HubSpot CRM Management</li>
         <li>Slack Workflow Automation</li>
         <li>Process Documentation & Reporting</li>
-        <li>Customer Communication & Follow-Up</li>
+        <li>Customer Communication & Escalation Handling</li>
     </ul>
 </div>
 
 <div id="projects" class="section">
-    <h2 class="title">Projects</h2>
+    <h2>Projects</h2>
 
+    <!-- PROJECT 1 -->
     <h3>Project 1 – Lead Automation</h3>
-    <p><strong>Project Goal:</strong> Automate lead collection, follow-up, and team notifications to reduce manual effort and ensure timely responses to incoming leads.</p>
+    <p><strong>Project Goal:</strong> Automate lead collection, follow-up, and team notifications to reduce manual effort and ensure timely responses.</p>
 
-    <p><strong>How it was achieved:</strong></p>
     <ol>
-        <li>Deployed a Google Form to collect leads from users.</li>
-        <li>Form responses are automatically stored in Google Sheets (Database).</li>
-        <li>Google Sheets is used as the trigger in the Zapier workflow.</li>
-        <li>An automatic appreciation email is sent via Gmail.</li>
-        <li>A task is created in HubSpot for the incoming lead.</li>
-        <li>A follow-up task is automatically created in Asana.</li>
-        <li>A Slack notification alerts the responsible team.</li>
+        <li>Google Form collects lead data.</li>
+        <li>Responses stored in Google Sheets.</li>
+        <li>Zapier triggers automation workflow.</li>
+        <li>Automatic email sent via Gmail.</li>
+        <li>Lead task created in HubSpot CRM.</li>
+        <li>Follow-up task created in Asana.</li>
+        <li>Slack notification alerts the team.</li>
     </ol>
 
-    <p><strong>Tools Used:</strong> Google Forms, Google Sheets, Zapier, Gmail, HubSpot CRM, Slack, Asana.</p>
+    <p><strong>Tools Used:</strong> Google Forms, Google Sheets, Zapier, Gmail, HubSpot, Slack, Asana.</p>
 
     <a href="Projects/Project 1 - Lead Automation/evidence.html">
         View Project Evidence & Screenshots
     </a>
+
+    <hr style="margin:40px 0;">
+
+    <!-- PROJECT 2 -->
+    <h3>Project 2 – Support Ticket Automation System <span style="color:#ff9800;">(In Progress)</span></h3>
+
+    <p><strong>Project Goal:</strong> Design and deploy a centralized technical support system that automatically converts customer support requests into actionable tasks, assigns them to the correct technical pipeline, and enforces resolution timelines.</p>
+
+    <p><strong>System Overview:</strong></p>
+    <ol>
+        <li>Customers submit issues through a Freshdesk web widget.</li>
+        <li>Tickets are categorized by service type (Solar, Electrical, HVAC, CCTV, Smart Home).</li>
+        <li>Webhooks push ticket data into Zapier.</li>
+        <li>Zapier creates structured tasks in ClickUp.</li>
+        <li>Priority levels control automatic due-date assignment.</li>
+        <li>SLA monitoring ensures overdue tasks are flagged for escalation.</li>
+        <li>Slack notifications keep teams informed in real time.</li>
+    </ol>
+
+    <p><strong>Key Features:</strong></p>
+    <ul>
+        <li>Automatic task creation from support tickets</li>
+        <li>Priority-based due date assignment</li>
+        <li>Service-specific pipelines</li>
+        <li>SLA tracking and escalation readiness</li>
+        <li>Timezone-aware task handling</li>
+    </ul>
+
+    <p><strong>Tools Used:</strong> Freshdesk, Zapier (Webhooks), ClickUp, Slack.</p>
+
+    <p><strong>Status:</strong> Actively implemented and tested for internal company use. SLA optimization and escalation logic ongoing.</p>
 </div>
 
 <div id="contact" class="section">
-    <h2 class="title">Contact</h2>
+    <h2>Contact</h2>
     <p><strong>Email:</strong> <a href="mailto:nnabueze014@gmail.com">nnabueze014@gmail.com</a></p>
     <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nnabueze" target="_blank">www.linkedin.com/in/nnabueze</a></p>
     <p><strong>Location:</strong> Remote (Nigeria)</p>
@@ -221,4 +241,4 @@ html {
 </main>
 
 </body>
-</html>
+                                                                                                                                                                                                                                                                  </html>
