@@ -26,20 +26,22 @@ nav {
     color: white;
     height: 100vh;
     position: fixed;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
+/* Portfolio title */
 nav h2 {
     padding-left: 20px;
-    margin-bottom: 20px;
+    margin: 0 0 15px 0;
     font-weight: 900;
     font-size: 24px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     border-bottom: 2px solid #ffeb3b;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
+/* Links */
 nav a {
     display: block;
     color: white;
@@ -52,6 +54,13 @@ nav a {
 
 nav a:hover {
     background-color: rgba(255,255,255,0.08);
+}
+
+/* Active highlight (Option 2) */
+nav a:focus {
+    color: #ffeb3b;
+    font-weight: bold;
+    outline: none;
 }
 
 /* Projects dropdown */
@@ -72,13 +81,15 @@ nav a:hover {
     display: block;
 }
 
+/* Sub links */
 .sub-link {
     padding-left: 35px;
     font-size: 14px;
     color: #ddd;
 }
 
-.sub-link:hover {
+.sub-link:hover,
+.sub-link:focus {
     color: #ffeb3b;
 }
 
@@ -152,6 +163,7 @@ html {
 <!-- NAVIGATION -->
 <nav>
     <h2>Portfolio</h2>
+
     <a href="#about">About Me</a>
     <a href="#skills">Skills</a>
 
@@ -172,8 +184,8 @@ html {
 <div id="about" class="section">
     <h1>Nnabueze Omeke</h1>
     <h3>IT Support & Automation Specialist</h3>
-    <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role, leveraging workflow automation, CRM integrations, and service desk systems to improve operational efficiency.</p>
-    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience designing and deploying automated support and business workflows.</p>
+    <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role, leveraging workflow automation and service desk systems.</p>
+    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience designing and deploying automated workflows.</p>
 </div>
 
 <div id="skills" class="section">
@@ -194,29 +206,23 @@ html {
     <!-- PROJECT 1 -->
     <div id="project1">
         <h3>Project 1 – Lead Automation</h3>
-
-        <p><strong>Project Goal:</strong> Automate lead collection, follow-up, and internal notifications to reduce manual effort and ensure timely engagement.</p>
+        <p><strong>Project Goal:</strong> Automate lead collection and follow-up.</p>
 
         <p><strong>How it was achieved:</strong></p>
         <ol>
-            <li>Google Form collects incoming leads.</li>
-            <li>Responses stored in Google Sheets.</li>
-            <li>Zapier triggers automation workflows.</li>
-            <li>Automatic email response via Gmail.</li>
-            <li>Task creation in HubSpot CRM.</li>
-            <li>Follow-up task in Asana.</li>
-            <li>Slack notification to the team.</li>
+            <li>Google Form captures leads</li>
+            <li>Zapier triggers workflows</li>
+            <li>CRM and task automation</li>
+            <li>Slack notifications</li>
         </ol>
 
         <p><strong>Key Outcomes:</strong></p>
         <ul>
-            <li>Reduced manual processing</li>
+            <li>Reduced manual work</li>
             <li>Improved response time</li>
-            <li>Clear task ownership</li>
-            <li>Consistent follow-up workflow</li>
         </ul>
 
-        <p><strong>Tools Used:</strong> Google Forms, Google Sheets, Zapier, Gmail, HubSpot, Slack, Asana.</p>
+        <p><strong>Tools Used:</strong> Google Forms, Zapier, HubSpot, Slack, Asana</p>
 
         <a href="Projects/Project 1 - Lead Automation/evidence.html">
             View Project Evidence & Screenshots
@@ -228,28 +234,23 @@ html {
     <!-- PROJECT 2 -->
     <div id="project2">
         <h3>Project 2 – Support Ticket Automation System</h3>
-
-        <p><strong>Project Goal:</strong> Build a centralized support system that converts customer issues into actionable tasks with SLA tracking.</p>
+        <p><strong>Project Goal:</strong> Convert support tickets into SLA-driven tasks.</p>
 
         <p><strong>How it was achieved:</strong></p>
         <ol>
-            <li>Support requests submitted via Freshdesk widget.</li>
-            <li>Tickets categorized by service and priority.</li>
-            <li>Freshdesk webhooks send data to Zapier.</li>
-            <li>Zapier creates tasks in ClickUp.</li>
-            <li>Automatic due dates based on priority.</li>
-            <li>Slack notifications provide visibility.</li>
+            <li>Freshdesk widget for ticket intake</li>
+            <li>Webhook to Zapier</li>
+            <li>ClickUp task creation</li>
+            <li>Slack notifications</li>
         </ol>
 
         <p><strong>Key Outcomes:</strong></p>
         <ul>
-            <li>Automated ticket-to-task conversion</li>
             <li>Clear SLA ownership</li>
-            <li>Improved response accountability</li>
-            <li>Reduced operational overhead</li>
+            <li>Improved accountability</li>
         </ul>
 
-        <p><strong>Tools Used:</strong> Freshdesk, Zapier (Webhooks), ClickUp, Slack.</p>
+        <p><strong>Tools Used:</strong> Freshdesk, Zapier, ClickUp, Slack</p>
 
         <a href="Projects/Project 2 - Support Ticket Automation/evidence.html">
             View Project Evidence & Screenshots
