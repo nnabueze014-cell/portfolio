@@ -31,11 +31,10 @@ nav {
 
 nav h2 {
     padding-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: 900;
     font-size: 24px;
     letter-spacing: 1.5px;
-    color: #ffffff;
     text-transform: uppercase;
     border-bottom: 2px solid #ffeb3b;
     padding-bottom: 10px;
@@ -45,8 +44,8 @@ nav a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 12px 20px;
-    margin: 5px 0;
+    padding: 10px 20px;
+    margin: 4px 0;
     border-radius: 5px;
     transition: 0.3s ease;
 }
@@ -55,9 +54,15 @@ nav a:hover {
     background-color: rgba(255,255,255,0.08);
 }
 
-nav a.active {
+/* Sub-links */
+nav .sub-link {
+    padding-left: 35px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+nav .sub-link:hover {
     color: #ffeb3b;
-    font-weight: bold;
 }
 
 /* ---------------- MAIN CONTENT ---------------- */
@@ -67,19 +72,15 @@ main {
     max-width: 900px;
 }
 
-/* Titles */
-h1, h2, h3 {
-    color: #1e1e2f;
-    margin-bottom: 10px;
-}
-
 h1 {
     font-size: 32px;
+    color: #1e1e2f;
 }
 
 h2 {
     font-size: 24px;
     margin-top: 40px;
+    color: #1e1e2f;
 }
 
 h3 {
@@ -87,31 +88,20 @@ h3 {
     color: #555;
 }
 
-/* Paragraph formatting */
 p {
     text-align: justify;
-    margin-bottom: 15px;
 }
 
-/* Lists */
 ul, ol {
     padding-left: 25px;
-    margin-bottom: 20px;
 }
 
-li {
-    margin-bottom: 8px;
-    text-align: justify;
-}
-
-/* Sections */
 .section {
     margin-bottom: 60px;
-    padding-bottom: 10px;
     border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
 }
 
-/* Links */
 a {
     color: #1e1e2f;
 }
@@ -120,7 +110,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Smooth scroll */
 html {
     scroll-behavior: smooth;
 }
@@ -131,10 +120,8 @@ html {
         position: relative;
         width: 100%;
         height: auto;
-        padding: 15px 0;
         text-align: center;
     }
-
     main {
         margin-left: 0;
         padding: 30px 20px;
@@ -145,21 +132,25 @@ html {
 
 <body>
 
+<!-- NAVIGATION -->
 <nav>
     <h2>Portfolio</h2>
     <a href="#about">About Me</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#project1" class="sub-link">• Project 1</a>
+    <a href="#project2" class="sub-link">• Project 2</a>
     <a href="#contact">Contact</a>
 </nav>
 
+<!-- MAIN CONTENT -->
 <main>
 
 <div id="about" class="section">
     <h1>Nnabueze Omeke</h1>
     <h3>IT Support & Automation Specialist</h3>
-    <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role, leveraging workflow automation, CRM integrations, and service desk systems to improve operational efficiency and service reliability.</p>
-    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience designing and deploying end-to-end support systems. Proven ability to automate ticket handling, enforce SLAs, and streamline communication between customers and technical teams.</p>
+    <p><strong>Career Goal:</strong> Secure a remote IT Support or Automation Specialist role, leveraging workflow automation, CRM integrations, and service desk systems to improve operational efficiency.</p>
+    <p><strong>Professional Summary:</strong> Results-driven IT Support and Automation Specialist with hands-on experience designing and deploying automated support and business workflows.</p>
 </div>
 
 <div id="skills" class="section">
@@ -169,10 +160,8 @@ html {
         <li>Freshdesk Ticketing Systems</li>
         <li>Zapier Automation & Webhooks</li>
         <li>ClickUp Task & SLA Management</li>
-        <li>Google Workspace Administration</li>
         <li>Slack Workflow Automation</li>
-        <li>Incident Tracking & Escalation</li>
-        <li>Customer Communication & Resolution</li>
+        <li>Process Documentation</li>
     </ul>
 </div>
 
@@ -180,56 +169,69 @@ html {
     <h2>Projects</h2>
 
     <!-- PROJECT 1 -->
-    <h3>Project 1 – Lead Automation</h3>
-    <p><strong>Project Goal:</strong> Automate lead collection, follow-up, and internal notifications to reduce manual effort and ensure timely responses.</p>
+    <div id="project1">
+        <h3>Project 1 – Lead Automation</h3>
 
-    <ol>
-        <li>Google Form collects lead information.</li>
-        <li>Responses are stored in Google Sheets.</li>
-        <li>Zapier triggers automation workflows.</li>
-        <li>Automatic email sent via Gmail.</li>
-        <li>Lead task created in HubSpot CRM.</li>
-        <li>Follow-up task created in Asana.</li>
-        <li>Slack notifications alert the team.</li>
-    </ol>
+        <p><strong>Project Goal:</strong> Automate lead collection, follow-up, and internal notifications to reduce manual effort and ensure timely engagement.</p>
 
-    <p><strong>Tools Used:</strong> Google Forms, Google Sheets, Zapier, Gmail, HubSpot, Slack, Asana.</p>
+        <p><strong>How it was achieved:</strong></p>
+        <ol>
+            <li>Google Form collects incoming leads.</li>
+            <li>Responses are stored in Google Sheets.</li>
+            <li>Zapier triggers automation workflows.</li>
+            <li>Automatic email sent via Gmail.</li>
+            <li>Lead task created in HubSpot CRM.</li>
+            <li>Follow-up task created in Asana.</li>
+            <li>Slack notification alerts the team.</li>
+        </ol>
 
-    <a href="Projects/Project 1 - Lead Automation/evidence.html">
-        View Project Evidence & Screenshots
-    </a>
+        <p><strong>Key Outcomes:</strong></p>
+        <ul>
+            <li>Reduced manual lead handling</li>
+            <li>Improved response time</li>
+            <li>Clear task ownership</li>
+            <li>Consistent follow-up process</li>
+        </ul>
+
+        <p><strong>Tools Used:</strong> Google Forms, Google Sheets, Zapier, Gmail, HubSpot, Slack, Asana.</p>
+
+        <a href="Projects/Project 1 - Lead Automation/evidence.html">
+            View Project Evidence & Screenshots
+        </a>
+    </div>
 
     <hr style="margin:40px 0;">
 
     <!-- PROJECT 2 -->
-    <h3>Project 2 – Support Ticket Automation System</h3>
+    <div id="project2">
+        <h3>Project 2 – Support Ticket Automation System</h3>
 
-    <p><strong>Project Goal:</strong> Build a centralized support system that automatically converts customer support requests into structured tasks, assigns them to the correct technical teams, and enforces resolution timelines.</p>
+        <p><strong>Project Goal:</strong> Build a centralized support system that converts customer issues into actionable tasks with SLA tracking.</p>
 
-    <p><strong>How it was achieved:</strong></p>
-    <ol>
-        <li>Customers submit issues via a Freshdesk support widget.</li>
-        <li>Tickets are categorized by service type and priority.</li>
-        <li>Freshdesk webhooks send ticket data to Zapier.</li>
-        <li>Zapier creates standardized tasks in ClickUp.</li>
-        <li>Priority levels automatically determine task due dates.</li>
-        <li>SLA tracking ensures unresolved tasks are flagged.</li>
-        <li>Slack notifications provide real-time visibility.</li>
-    </ol>
+        <p><strong>How it was achieved:</strong></p>
+        <ol>
+            <li>Support requests submitted via Freshdesk widget.</li>
+            <li>Tickets categorized by service and priority.</li>
+            <li>Freshdesk webhooks send data to Zapier.</li>
+            <li>Zapier creates tasks in ClickUp.</li>
+            <li>Priority determines automatic due dates.</li>
+            <li>Slack notifications provide visibility.</li>
+        </ol>
 
-    <p><strong>Key Outcomes:</strong></p>
-    <ul>
-        <li>Eliminated manual task creation</li>
-        <li>Improved response and resolution tracking</li>
-        <li>Clear accountability across technical pipelines</li>
-        <li>Consistent SLA enforcement</li>
-    </ul>
+        <p><strong>Key Outcomes:</strong></p>
+        <ul>
+            <li>Automated task creation</li>
+            <li>SLA-driven accountability</li>
+            <li>Improved response tracking</li>
+            <li>Reduced operational overhead</li>
+        </ul>
 
-    <p><strong>Tools Used:</strong> Freshdesk, Zapier (Webhooks), ClickUp, Slack.</p>
+        <p><strong>Tools Used:</strong> Freshdesk, Zapier (Webhooks), ClickUp, Slack.</p>
 
-    <a href="Projects/Project 2 - Support Ticket Automation/evidence.html">
-        View Project Evidence & Screenshots
-    </a>
+        <a href="Projects/Project 2 - Support Ticket Automation/evidence.html">
+            View Project Evidence & Screenshots
+        </a>
+    </div>
 </div>
 
 <div id="contact" class="section">
