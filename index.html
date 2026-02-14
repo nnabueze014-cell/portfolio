@@ -54,14 +54,31 @@ nav a:hover {
     background-color: rgba(255,255,255,0.08);
 }
 
-/* Sub-links */
-nav .sub-link {
+/* Projects dropdown */
+.nav-group {
+    margin-top: 5px;
+}
+
+.nav-parent {
+    cursor: pointer;
+}
+
+.nav-children {
+    display: none;
+}
+
+.nav-group:hover .nav-children,
+.nav-group:focus-within .nav-children {
+    display: block;
+}
+
+.sub-link {
     padding-left: 35px;
     font-size: 14px;
     color: #ddd;
 }
 
-nav .sub-link:hover {
+.sub-link:hover {
     color: #ffeb3b;
 }
 
@@ -137,9 +154,15 @@ html {
     <h2>Portfolio</h2>
     <a href="#about">About Me</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#project1" class="sub-link">• Project 1</a>
-    <a href="#project2" class="sub-link">• Project 2</a>
+
+    <div class="nav-group">
+        <a class="nav-parent">Projects ▾</a>
+        <div class="nav-children">
+            <a href="#project1" class="sub-link">• Project 1</a>
+            <a href="#project2" class="sub-link">• Project 2</a>
+        </div>
+    </div>
+
     <a href="#contact">Contact</a>
 </nav>
 
@@ -177,20 +200,20 @@ html {
         <p><strong>How it was achieved:</strong></p>
         <ol>
             <li>Google Form collects incoming leads.</li>
-            <li>Responses are stored in Google Sheets.</li>
+            <li>Responses stored in Google Sheets.</li>
             <li>Zapier triggers automation workflows.</li>
-            <li>Automatic email sent via Gmail.</li>
-            <li>Lead task created in HubSpot CRM.</li>
-            <li>Follow-up task created in Asana.</li>
-            <li>Slack notification alerts the team.</li>
+            <li>Automatic email response via Gmail.</li>
+            <li>Task creation in HubSpot CRM.</li>
+            <li>Follow-up task in Asana.</li>
+            <li>Slack notification to the team.</li>
         </ol>
 
         <p><strong>Key Outcomes:</strong></p>
         <ul>
-            <li>Reduced manual lead handling</li>
+            <li>Reduced manual processing</li>
             <li>Improved response time</li>
             <li>Clear task ownership</li>
-            <li>Consistent follow-up process</li>
+            <li>Consistent follow-up workflow</li>
         </ul>
 
         <p><strong>Tools Used:</strong> Google Forms, Google Sheets, Zapier, Gmail, HubSpot, Slack, Asana.</p>
@@ -214,15 +237,15 @@ html {
             <li>Tickets categorized by service and priority.</li>
             <li>Freshdesk webhooks send data to Zapier.</li>
             <li>Zapier creates tasks in ClickUp.</li>
-            <li>Priority determines automatic due dates.</li>
+            <li>Automatic due dates based on priority.</li>
             <li>Slack notifications provide visibility.</li>
         </ol>
 
         <p><strong>Key Outcomes:</strong></p>
         <ul>
-            <li>Automated task creation</li>
-            <li>SLA-driven accountability</li>
-            <li>Improved response tracking</li>
+            <li>Automated ticket-to-task conversion</li>
+            <li>Clear SLA ownership</li>
+            <li>Improved response accountability</li>
             <li>Reduced operational overhead</li>
         </ul>
 
