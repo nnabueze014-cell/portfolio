@@ -1,3 +1,5 @@
 
-## SUPPORT AND OPERATIONS AUTOMATION SYSTEM 
+## Project Highlight: 
+## Front-Desk to Operations Support Automation with SLA Escalation
+
 **...**
