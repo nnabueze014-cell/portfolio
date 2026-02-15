@@ -260,29 +260,60 @@ html {
     <hr style="margin:40px 0;">
 
     <!-- PROJECT 2 -->
-    <div id="project2">
-        <h3>Project 2 – Support Ticket & SLA Automation</h3>
+<div id="project2">
+    <h3>Project 2 – Support Operations & SLA Automation</h3>
 
-        <p><strong>Project Goal:</strong><br>
-        Build an end-to-end support workflow that enforces SLA tracking, escalation, and accountability across service desk and task management platforms.</p>
+    <p><strong>Project Context:</strong><br>
+    This project was inspired by my hands-on learning journey in service desk operations, workflow automation, and project management tools.
+    Beyond learning tools individually, the goal was to design a realistic, end-to-end support and operations system that mirrors how real technical service companies operate.</p>
 
-        <p><strong>How it was achieved:</strong></p>
-        <ol>
-            <li>Support tickets submitted through a service desk widget</li>
-            <li>Tickets automatically converted into structured tasks</li>
-            <li>SLA start times and due dates applied programmatically</li>
-            <li>Automated escalation on SLA breach with reassignment</li>
-            <li>Supervisors notified through real-time collaboration alerts</li>
-        </ol>
+    <p><strong>Problem Statement:</strong><br>
+    In many technical service businesses, customer requests arrive through unstructured channels such as calls or messages, leading to delayed responses, missed follow-ups, and weak accountability.
+    I set out to design a system that formalizes customer requests, enforces SLAs, and ensures seamless handoff between support and operations teams.</p>
 
-        <p><strong>Key Outcomes:</strong></p>
-        <ul>
-            <li>Clear visibility into SLA compliance</li>
-            <li>Automatic escalation of overdue requests</li>
-            <li>Improved accountability for support teams</li>
-            <li>Reduced risk of missed or stalled tickets</li>
-        </ul>
+    <p><strong>System Design Overview:</strong><br>
+    The solution was structured into three connected layers to reflect real-world service operations.</p>
 
+    <ol>
+        <li><strong>Frontend (Customer Support Layer):</strong><br>
+            A demo customer support portal built using a service desk widget embedded on a web page.
+            Customers submit requests which are instantly acknowledged, categorized, prioritized, and tracked under defined SLAs.
+        </li>
+
+        <li><strong>Automation & Integration Layer:</strong><br>
+            An event-driven automation layer connects customer support to operations.
+            When a ticket is created, automation workflows process the data in real time, determine the service category, priority, and ownership, and generate corresponding operational tasks without manual intervention.
+        </li>
+
+        <li><strong>Operations & Execution Layer:</strong><br>
+            Operational work is managed in a project management system where engineers and technicians execute tasks.
+            Tasks inherit SLA timelines, include supervisors as watchers, and update status automatically as work progresses.
+        </li>
+    </ol>
+
+    <p><strong>SLA Monitoring & Escalation:</strong></p>
+    <ul>
+        <li>Customer-facing SLAs track first response and resolution times</li>
+        <li>Operational SLAs govern task execution and delivery</li>
+        <li>Automated escalation triggers reassignment, priority updates, and supervisor alerts when thresholds are breached</li>
+    </ul>
+
+    <p><strong>Key Outcomes:</strong></p>
+    <ul>
+        <li>End-to-end visibility from customer request to task completion</li>
+        <li>Elimination of manual handoffs between support and operations</li>
+        <li>Improved SLA compliance and accountability</li>
+        <li>Clear separation of customer communication and execution responsibilities</li>
+    </ul>
+
+    <p><strong>Tools & Concepts Applied:</strong><br>
+    Service Desk & Ticketing Systems, Webhooks & Event Triggers, Workflow Automation, Project & SLA Management,
+    Priority Mapping, Escalation Logic, and Cross-team Visibility.</p>
+
+    <a href="Projects/Project 2 - Support Ticket Automation/evidence.html">
+        View Project Evidence & Screenshots
+    </a>
+</div>
         <p><strong>Tools Used:</strong> Service Desk Platform, Zapier, ClickUp, Slack</p>
 
         <a href="Projects/Project 2 - Support Ticket Automation/evidence.html">
