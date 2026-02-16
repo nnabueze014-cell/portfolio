@@ -4,161 +4,180 @@
   <meta charset="UTF-8">
   <title>Project 2 Evidence – Support Ticket & SLA Automation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
     body {
       font-family: "Segoe UI", Arial, sans-serif;
-      background: #f8f9fb;
+      background-color: #f8f9fb;
       color: #333;
-      line-height: 1.7;
       margin: 0;
+      padding: 40px 20px;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
       padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     }
 
     h1 {
       color: #1e1e2f;
+      margin-bottom: 10px;
     }
 
     h2 {
-      margin-top: 50px;
+      margin-top: 40px;
       color: #1e1e2f;
     }
 
     p {
-      max-width: 900px;
+      margin-bottom: 15px;
+    }
+
+    .demo-box {
+      background: #f1f5ff;
+      border-left: 5px solid #3f51b5;
+      padding: 20px;
+      border-radius: 6px;
+      margin: 30px 0;
+    }
+
+    .demo-box a {
+      font-weight: bold;
+      color: #3f51b5;
+      text-decoration: none;
+    }
+
+    .demo-box a:hover {
+      text-decoration: underline;
     }
 
     .evidence {
-      margin-top: 20px;
+      margin-top: 35px;
     }
 
     .evidence img {
       width: 100%;
-      max-width: 900px;
       border-radius: 8px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      margin-top: 10px;
+      margin: 15px 0;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
     }
 
-    .note {
+    .caption {
       font-size: 14px;
       color: #555;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      text-align: center;
+      color: #777;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
 
-<h1>Project 2 – Support Ticket & SLA Automation (Evidence)</h1>
+    <h1>Project 2 – Support Ticket & SLA Automation</h1>
+    <p>
+      This page documents the practical implementation of an end-to-end support
+      and operations automation system, designed to reflect real-world service desk
+      and operations workflows.
+    </p>
 
-  <section class="evidence-highlight">
-  <h2>Live Demo – Customer Support Portal</h2>
-  <p>
-    This project includes a live demo customer support portal that represents the
-    front desk of the organization. Visitors can submit real support requests and
-    experience how tickets flow through the system.
-  </p>
-  <p>
-    👉 <a href="https://nnabueze014-cell.github.io/SteviewGlobal-support-demo/" target="_blank">
-      Access the Live Customer Support Portal
-    </a>
-  </p>
-  </section>
+    <!-- LIVE DEMO SECTION -->
+    <div class="demo-box">
+      <h2>Live Demo – Customer Support Portal</h2>
+      <p>
+        This project includes a live demo customer support portal that represents
+        the front desk of an organization. Visitors can submit real service requests
+        and experience how tickets flow through the system.
+      </p>
+      <p>
+        👉 <a href="https://nnabueze014-cell.github.io/SteviewGlobal-support-demo/" target="_blank">
+          Access the Live Customer Support Portal
+        </a>
+      </p>
+    </div>
 
-<p>
-This page documents the end-to-end flow of a support and operations automation system,
-from customer request intake to task execution and SLA escalation.
-</p>
+    <!-- EVIDENCE SECTION -->
+    <div class="evidence">
 
-<!-- 1 -->
-<h2>1. Customer Support Portal (Frontend)</h2>
-<p>
-A demo customer-facing support portal built to simulate how clients submit service requests
-for installations, repairs, maintenance, or technical support.
-</p>
-<div class="evidence">
-  <img src="images/portal.png" alt="Customer Support Portal">
-</div>
+      <h2>1. Customer Support Portal (Frontend)</h2>
+      <img src="images/portal.png" alt="Customer Support Portal">
+      <p class="caption">
+        A demo customer-facing support portal built with the Freshdesk widget embedded
+        on a web page. This serves as the front desk where all customer requests originate.
+      </p>
 
-<!-- 2 -->
-<h2>2. Embedded Support Widget</h2>
-<p>
-The Freshdesk widget embedded in the portal allows customers to submit tickets,
-select service type, priority, and preferred contact method.
-</p>
-<div class="evidence">
-  <img src="images/widget-form.png" alt="Freshdesk Widget Form">
-</div>
+      <h2>2. Embedded Support Widget</h2>
+      <img src="images/widget-form.png" alt="Freshdesk Widget Form">
+      <p class="caption">
+        The Freshdesk widget allows customers to submit service requests, select service
+        type, preferred contact method, and priority.
+      </p>
 
-<!-- 3 -->
-<h2>3. Ticket Created in Service Desk</h2>
-<p>
-Once a request is submitted, a ticket is automatically created in Freshdesk,
-serving as the front desk system for acknowledgment and tracking.
-</p>
-<div class="evidence">
-  <img src="images/freshdesk-ticket.png" alt="Freshdesk Ticket Created">
-</div>
+      <h2>3. Ticket Created in Service Desk</h2>
+      <img src="images/freshdesk-ticket.png" alt="Freshdesk Ticket Created">
+      <p class="caption">
+        A support ticket automatically created in the service desk after customer submission,
+        with categorization and SLA timers applied.
+      </p>
 
-<!-- 4 -->
-<h2>4. First Response to Customer</h2>
-<p>
-An initial response is sent to the customer, meeting first-response SLA requirements
-and confirming that the request is being processed.
-</p>
-<div class="evidence">
-  <img src="images/freshdesk-first-response.png" alt="First Response Sent">
-</div>
+      <h2>4. First Response to Customer</h2>
+      <img src="images/first-response.png" alt="First Response to Ticket">
+      <p class="caption">
+        Automated or agent-driven first response sent to the customer, ensuring SLA
+        compliance and acknowledgment.
+      </p>
 
-<!-- 5 -->
-<h2>5. Slack Notification – New Ticket</h2>
-<p>
-A real-time Slack notification is pushed to the support channel to ensure immediate
-visibility of new incoming tickets.
-</p>
-<div class="evidence">
-  <img src="images/slack-new-ticket.png" alt="Slack New Ticket Notification">
-</div>
+      <h2>5. Slack Notification – New Ticket</h2>
+      <img src="images/slack-new-ticket.png" alt="Slack Notification">
+      <p class="caption">
+        Real-time Slack notification sent to the support or agent channel when a new
+        ticket is created.
+      </p>
 
-<!-- 6 -->
-<h2>6. Automation Workflow (Zapier)</h2>
-<p>
-Zapier listens to Freshdesk webhooks and automatically creates operational tasks
-based on ticket properties such as service type and priority.
-</p>
-<div class="evidence">
-  <img src="images/zapier-workflow.png" alt="Zapier Automation Workflow">
-</div>
+      <h2>6. Zapier Automation Workflow</h2>
+      <img src="images/zapier-workflow.png" alt="Zapier Workflow">
+      <p class="caption">
+        Zapier workflow listening to Freshdesk webhook events and creating tasks based
+        on service type, priority, and SLA rules.
+      </p>
 
-<!-- 7 -->
-<h2>7. Operational Task in ClickUp (Backend)</h2>
-<p>
-Each support ticket becomes a structured task in ClickUp, with assigned pipeline,
-priority, status, watchers, and SLA-driven due dates for execution.
-</p>
-<div class="evidence">
-  <img src="images/clickup-task.png" alt="ClickUp Task Properties">
-</div>
+      <h2>7. ClickUp Task with SLA Properties</h2>
+      <img src="images/clickup-task.png" alt="ClickUp Task">
+      <p class="caption">
+        Automatically created task in ClickUp showing pipeline assignment, priority,
+        status, watchers, and operational SLA tracking.
+      </p>
 
-<!-- 8 -->
-<h2>8. SLA Breach Escalation</h2>
-<p>
-When SLA thresholds are breached, automated alerts notify supervisors,
-escalate priority, and enforce accountability.
-</p>
-<div class="evidence">
-  <img src="images/freshdesk-sla-breach.png" alt="Freshdesk SLA Breach Alert">
-</div>
+      <h2>8. SLA Breach Escalation Alert</h2>
+      <img src="images/sla-breach.png" alt="SLA Breach Alert">
+      <p class="caption">
+        SLA breach alert pushed to a supervisor channel, ensuring visibility and
+        accountability when response or resolution timelines are exceeded.
+      </p>
 
-<!-- 9 (Optional) -->
-<h2>9. Service Desk Automation Rules (Optional)</h2>
-<p class="note">
-This view shows internal Freshdesk automation rules used to manage SLA monitoring,
-priority escalation, reassignment, and notifications.
-</p>
-<div class="evidence">
-  <img src="images/freshdesk-automation.png" alt="Freshdesk Automation Rules">
-</div>
+      <h2>9. Freshdesk Automation Rules</h2>
+      <img src="images/freshdesk-automation.png" alt="Freshdesk Automation Rules">
+      <p class="caption">
+        Automation rules configured in the service desk to monitor SLA thresholds,
+        update priority, reassign tickets, and trigger escalations.
+      </p>
 
+    </div>
+
+    <footer>
+      Portfolio Project Evidence – Support Operations & Automation System
+    </footer>
+
+  </div>
 </body>
 </html>
