@@ -10,7 +10,7 @@
 
 **...**
 ## Google Sheet
-![Sheet](Google-sheett.png)
+![Sheet](Google-sheet.png)
 
 **...**
 ## Gmail Message
