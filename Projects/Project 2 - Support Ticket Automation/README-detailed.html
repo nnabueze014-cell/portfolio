@@ -1,137 +1,208 @@
-# Project 2 – Support Ticket Automation System
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2 – Support Ticket & SLA Automation</title>
 
-## Overview
-This project demonstrates a real-world **support and operations automation system** that connects customer service requests to operational execution using modern service desk and automation tools.
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+      background: #f9fafb;
+      color: #111827;
+      margin: 0;
+      padding: 0;
+    }
 
-The goal was to move beyond learning individual tools and instead design an **end-to-end workflow** that reflects how real technical service companies operate, with clear SLAs, escalation paths, and cross-team visibility.
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      background: #ffffff;
+    }
 
----
+    h1, h2, h3 {
+      color: #0f172a;
+      margin-top: 1.5em;
+    }
 
-## Problem Statement
-Many service-based technical companies still rely on informal channels (calls, WhatsApp, direct messages) to receive customer requests.  
-This often leads to:
-- Poor tracking of requests
-- Delayed responses
-- Missed SLAs
-- Lack of accountability between support and operations teams
+    h1 {
+      font-size: 2.2rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 10px;
+    }
 
-This project solves that by creating a **structured, automated support-to-operations pipeline**.
+    h2 {
+      font-size: 1.6rem;
+    }
 
----
+    p {
+      margin: 1em 0;
+    }
 
-## System Architecture
-The system is designed in **three connected layers**:
+    ul {
+      margin-left: 20px;
+    }
 
-1. Frontend Layer (Customer Support / Front Desk)
-2. Automation & Integration Layer (System Bridge)
-3. Operations & Execution Layer (Backend Unit)
+    li {
+      margin-bottom: 8px;
+    }
 
-Each layer has its own responsibilities while remaining tightly integrated.
+    .tag {
+      display: inline-block;
+      background: #eef2ff;
+      color: #3730a3;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
 
----
+    .links a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 10px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-## Frontend Layer – Customer Support (Freshdesk)
-The system begins with a **customer-facing support portal** built using the Freshdesk widget embedded on a demo website.
+    .links a:hover {
+      text-decoration: underline;
+    }
 
-### Key Functions
-- Customers submit service requests via the embedded support widget
-- Tickets are automatically created in Freshdesk
-- Requests are categorized by:
-  - Service type
-  - Preferred support method (call or email)
-  - Priority level
-- First response and resolution SLAs are applied
-- Automation rules monitor SLA compliance and trigger escalations when breached
+    .note {
+      background: #f1f5f9;
+      border-left: 4px solid #2563eb;
+      padding: 15px;
+      margin: 25px 0;
+    }
+  </style>
+</head>
 
-This layer focuses on:
-- Customer communication
-- Acknowledgment of requests
-- Service-level performance tracking
+<body>
+  <div class="container">
 
----
+    <h1>Project 2 – Support Ticket & SLA Automation System</h1>
 
-## Automation & Integration Layer – System Bridge (Zapier)
-This layer connects customer support to operational execution.
+    <p>
+      This project demonstrates a real-world support and operations automation system that connects
+      customer service requests to backend execution workflows with clearly defined SLAs and escalation paths.
+      It mirrors how modern service-based technical companies operate at scale.
+    </p>
 
-### How It Works
-- Freshdesk sends a webhook immediately a ticket is created
-- Zapier listens for the webhook event and processes the ticket data in real time
+    <div class="links">
+      <a href="evidence.html">📂 View Project Evidence</a>
+      <a href="https://nnabueze014-cell.github.io/SteviewGlobal-support-demo/" target="_blank">
+        🌐 Live Customer Support Portal
+      </a>
+    </div>
 
-### Automation Logic
-Zapier automatically:
-- Creates a corresponding task in the project management system
-- Assigns the task to the correct service pipeline:
-  - Electrical
-  - Solar
-  - CCTV
-  - Home Automation
-  - HVAC
-- Maps ticket priority to task priority
-- Sets start dates and due dates based on SLA requirements
+    <h2>Problem Statement</h2>
+    <p>
+      Many service-based technical companies still rely on informal channels such as calls and messages
+      to receive customer requests. This often leads to poor tracking, missed SLAs, delayed execution,
+      and lack of accountability across teams.
+    </p>
 
-This removes manual handoffs and ensures instant action once a ticket is created.
+    <p>
+      This project addresses that gap by designing a structured, automated system that ensures
+      customer requests are acknowledged, tracked, executed, and resolved with full visibility.
+    </p>
 
----
+    <h2>System Architecture Overview</h2>
+    <p>The solution is designed using a three-layer architecture:</p>
 
-## Operations & Execution Layer – Backend Unit (ClickUp)
-This layer handles actual service execution by engineers and technicians.
+    <ul>
+      <li><strong>Frontend Layer (Customer Support / Front Desk)</strong></li>
+      <li><strong>Automation & Integration Layer (System Bridge)</strong></li>
+      <li><strong>Operations & Execution Layer (Backend Unit)</strong></li>
+    </ul>
 
-### Key Functions
-- Support tickets become actionable operational tasks
-- Tasks are assigned to the appropriate pipelines
-- Supervisors and watchers are added for oversight
-- A separate operational SLA governs execution timelines
-- SLA breaches trigger automatic status changes and visibility alerts
+    <h2>1. Frontend Layer – Customer Support (Freshdesk)</h2>
+    <p>
+      The system begins with a customer-facing support portal built using the Freshdesk widget,
+      embedded on a demo website. This serves as the official entry point for all service requests.
+    </p>
 
-This allows engineers to focus on execution while management maintains full visibility.
+    <ul>
+      <li>Customers submit service requests via the embedded widget</li>
+      <li>Requests are categorized by service type and priority</li>
+      <li>Preferred support method (call or email) is captured</li>
+      <li>First response and resolution SLAs are automatically applied</li>
+      <li>Automations monitor SLA compliance and escalate when breached</li>
+    </ul>
 
----
+    <p>
+      This layer focuses on customer communication, acknowledgment, and service-level performance.
+    </p>
 
-## SLA Monitoring & Escalation
-The system uses **dual SLA frameworks**:
+    <h2>2. Automation & Integration Layer – System Bridge (Zapier)</h2>
+    <p>
+      To eliminate manual handoffs between support and operations, an automation layer was implemented
+      using webhooks and Zapier.
+    </p>
 
-### Frontend SLA
-- Tracks first response and resolution times
-- Breaches escalate ticket priority
-- Supervisors are notified automatically
+    <ul>
+      <li>Freshdesk sends a webhook event immediately a ticket is created</li>
+      <li>Zapier listens for the event and processes the ticket data in real time</li>
+      <li>A corresponding task is created in the operations tool</li>
+      <li>Tasks are routed to the correct service pipeline (Electrical, Solar, CCTV, Home Automation, HVAC)</li>
+      <li>Priority levels, start dates, and due dates are mapped automatically</li>
+    </ul>
 
-### Backend SLA
-- Tracks execution and delivery timelines
-- Breaches trigger status updates
-- Tagged comments and alerts notify stakeholders
+    <p>
+      This ensures instant transition from customer request to operational action.
+    </p>
 
-This ensures accountability from initial customer contact to final task completion.
+    <h2>3. Operations & Execution Layer – Backend Unit (ClickUp)</h2>
+    <p>
+      The backend execution layer is managed in ClickUp, where engineers and technicians carry out the work.
+    </p>
 
----
+    <ul>
+      <li>Support tickets become actionable operational tasks</li>
+      <li>Tasks are assigned to technicians with supervisors added as watchers</li>
+      <li>A separate execution SLA governs delivery timelines</li>
+      <li>SLA breaches trigger automatic status updates and alerts</li>
+    </ul>
 
-## Tools & Concepts Applied
-- Freshdesk Widget & Service Desk Operations
-- Webhooks & Event-Driven Automation
-- Zapier Workflow Orchestration
-- ClickUp Project & SLA Management
-- Priority Mapping & Escalation Logic
-- Cross-Team Visibility & Notifications
+    <p>
+      This allows engineers to focus on execution while management maintains visibility and control.
+    </p>
 
----
+    <h2>SLA Monitoring & Escalation (End-to-End)</h2>
+    <ul>
+      <li>Front-desk SLA breaches escalate ticket priority and notify supervisors</li>
+      <li>Backend SLA breaches update task status and notify relevant stakeholders</li>
+      <li>Accountability is enforced from first customer contact to final resolution</li>
+    </ul>
 
-## Key Learning Outcome
-This project represents a shift from:
-> Learning individual tools  
-to  
-> Designing systems that reflect real operational environments
+    <h2>Tools & Concepts Applied</h2>
+    <div>
+      <span class="tag">Freshdesk</span>
+      <span class="tag">Zapier</span>
+      <span class="tag">ClickUp</span>
+      <span class="tag">Webhooks</span>
+      <span class="tag">ITSM</span>
+      <span class="tag">SLA Management</span>
+      <span class="tag">Workflow Automation</span>
+    </div>
 
-It serves as a foundation for future upgrades and more advanced automation.
+    <h2>Key Learning Outcome</h2>
+    <div class="note">
+      This project represents a shift from learning individual tools to designing
+      interconnected systems that reflect real operational environments.
+      It demonstrates system thinking, automation logic, and service-driven design.
+    </div>
 
----
+    <p>
+      This implementation serves as a foundation for future enhancements such as advanced reporting,
+      analytics, and deeper workflow automation.
+    </p>
 
-## Demo & Evidence
-- System Walkthrough & Evidence:  
-  https://nnabueze014-cell.github.io/portfolio/Projects/Project%202%20-%20Support%20Ticket%20Automation/evidence.html
-
-- Customer Support Portal Demo:  
-  https://nnabueze014-cell.github.io/SteviewGlobal-support-demo/
-
----
-
-## Status
-🚧 Ongoing — This project will be extended with more advanced workflows and reporting features.
+  </div>
+</body>
+</html>
