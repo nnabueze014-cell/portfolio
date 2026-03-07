@@ -4,183 +4,240 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Project 3 – AI Lead Qualification & Cold Outreach Automation</title>
+<title>Project Evidence – AI Lead Qualification Automation</title>
 
 <style>
 
 body{
-font-family:Segoe UI, Arial, sans-serif;
-margin:40px;
-background:#f8f9fb;
+font-family: Arial, Helvetica, sans-serif;
+line-height:1.6;
+margin:0;
+padding:0;
+background:#fafafa;
 color:#333;
-line-height:1.7;
+}
+
+.container{
 max-width:900px;
+margin:auto;
+padding:40px 20px;
+background:white;
+}
+
+h1,h2,h3{
+color:#222;
 }
 
 h1{
-color:#1e1e2f;
-}
-
-h2{
-margin-top:40px;
-color:#1e1e2f;
+margin-top:0;
 }
 
 img{
 width:100%;
 border-radius:6px;
-margin-top:15px;
-box-shadow:0 2px 8px rgba(0,0,0,0.08);
+margin:20px 0;
+border:1px solid #ddd;
 }
 
-.section{
-margin-bottom:50px;
+hr{
+margin:40px 0;
 }
 
-.readme-link{
+.caption{
+font-size:14px;
+color:#666;
+font-style:italic;
+}
+
+.section-intro{
+font-size:17px;
+}
+
+.back{
+margin-top:40px;
 display:inline-block;
-margin-top:10px;
-padding:10px 16px;
-background:#1e1e2f;
-color:white;
 text-decoration:none;
-border-radius:6px;
+color:#0a66c2;
+font-weight:bold;
 }
 
-.readme-link:hover{
-background:#333;
+ul{
+margin-left:20px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<h1>Project 3 – AI Lead Qualification & Cold Outreach Automation</h1>
+<div class="container">
 
-<p>
-This project demonstrates how outbound sales workflows can be automated using lead intelligence tools, email outreach platforms, and AI-powered reply classification.
+<h1>AI Lead Qualification Automation</h1>
+
+<p class="section-intro">
+This evidence page documents the architecture and operational workflow of the AI-assisted outbound sales automation system developed for this project.
 </p>
 
 <p>
-The system was designed to simulate how modern sales teams automate outbound prospecting while reducing the manual effort required to review and qualify incoming email replies.
+The system demonstrates how outbound campaigns can be combined with workflow automation and AI-assisted lead qualification to reduce manual review and improve sales response time.
+</p>
+
+<hr>
+
+<h2>Workflow Evidence & System Walkthrough</h2>
+
+<p>
+The following screenshots illustrate how leads move through the system from prospect sourcing to outreach, reply detection, AI classification, and pipeline routing.
+</p>
+
+<hr>
+
+<h3>1. Prospect Sourcing – Apollo</h3>
+
+<p>
+Target prospects were sourced using Apollo based on operational leadership roles such as service managers and operations managers.
+</p>
+
+<img src="images/apollo-prospect-search.png" alt="Apollo Prospect Search">
+
+<p class="caption">
+Figure: Prospect sourcing using Apollo lead intelligence.
+</p>
+
+<hr>
+
+<h3>2. Lead Dataset Preparation</h3>
+
+<p>
+After exporting contacts from Apollo, the dataset was reviewed and cleaned before being used for the outreach campaign.
 </p>
 
 <p>
-Prospects are sourced using a lead intelligence platform, imported into a cold email campaign, and engaged through a structured outreach sequence. When replies are received, automation workflows analyze the message using AI and assign lead qualification scores that determine the next action.
+Cleaning steps included removing incomplete records and organizing contact information for campaign upload.
 </p>
 
-<a class="readme-link" href="README_detailed.html" target="_blank">
-Open Full Project Documentation (README)
-</a>
+<img src="images/cleaned-lead-dataset.png" alt="Cleaned Lead Dataset">
 
-<div class="section">
+<p class="caption">
+Figure: Cleaned dataset prepared for outreach campaign upload.
+</p>
 
-<h2>System Architecture</h2>
+<hr>
+
+<h3>3. Lemlist Outreach Campaign</h3>
 
 <p>
-The system consists of three operational layers working together:
+The outbound campaign was launched using Lemlist with a structured email sequence.
+</p>
+
+<p>
+The sequence includes:
 </p>
 
 <ul>
-<li><strong>Lead Intelligence Layer</strong> – Prospect discovery and filtering</li>
-<li><strong>Outreach Layer</strong> – Cold email campaign management</li>
-<li><strong>Automation & AI Layer</strong> – Reply detection, AI scoring, and workflow routing</li>
-</ul>
-
-</div>
-
-<div class="section">
-
-<h2>Lead Intelligence – Prospect Discovery</h2>
-
-<p>
-Prospects were sourced using a lead intelligence platform where companies were filtered based on industry, company size, and operational roles relevant to service-based organizations.
-</p>
-
-<img src="images/apollo_filters.png" alt="Apollo lead filters">
-
-</div>
-
-<div class="section">
-
-<h2>Prospect Dataset Preparation</h2>
-
-<p>
-Qualified prospects were exported and prepared for outreach campaigns. Additional operational fields were added to support automation workflows such as lead scoring, engagement status, and escalation flags.
-</p>
-
-<img src="images/lead_sheet.png" alt="Lead preparation sheet">
-
-</div>
-
-<div class="section">
-
-<h2>Cold Outreach Campaign (Lemlist)</h2>
-
-<p>
-A structured outbound email campaign was built using Lemlist. The campaign consisted of a three-step sequence designed to initiate conversations with operational decision-makers.
-</p>
-
-<ul>
-<li>Initial outreach email</li>
+<li>Initial outreach message</li>
 <li>Follow-up message</li>
-<li>Breakup email</li>
+<li>Break-up message if no response is received</li>
 </ul>
 
-<img src="images/lemlist_campaign.png" alt="Lemlist campaign">
+<img src="images/lemlist-campaign-sequence.png" alt="Lemlist Campaign Sequence">
 
-</div>
-
-<div class="section">
-
-<h2>Email Reply Detection</h2>
-
-<p>
-When a prospect replies to the outreach email, Lemlist triggers automation workflows through Zapier. These workflows capture the reply content and send it to an AI classifier for analysis.
+<p class="caption">
+Figure: Lemlist campaign sequence used for the outreach workflow.
 </p>
 
-<img src="images/zapier_reply_trigger.png" alt="Zapier automation">
+<hr>
 
-</div>
-
-<div class="section">
-
-<h2>AI Lead Qualification</h2>
+<h3>4. Automation Workflow – Zapier</h3>
 
 <p>
-Incoming replies are analyzed using AI to determine the intent and qualification level of the lead.
+When a prospect replies to the outreach email, Zapier detects the reply event and triggers the automation workflow responsible for reply analysis and lead qualification.
 </p>
 
-<ul>
-<li>Positive interest</li>
-<li>Neutral / information request</li>
-<li>Negative response</li>
-</ul>
+<img src="images/zapier-automation-workflow.png" alt="Zapier Automation Workflow">
+
+<p class="caption">
+Figure: Zapier workflow used for reply detection and automation.
+</p>
+
+<hr>
+
+<h3>5. Reply Detection Notification</h3>
 
 <p>
-The AI assigns a lead score which is then used to determine follow-up actions such as scheduling meetings, sending additional information, or removing the contact from future campaigns.
+Whenever a reply is received, the system generates an alert indicating that a prospect has responded to the outreach message.
 </p>
 
-<img src="images/ai_lead_score.png" alt="AI lead scoring">
+<p>
+This notification serves as the starting point for the AI-assisted lead qualification process.
+</p>
 
-</div>
+<img src="images/new-reply-notification.png" alt="New Reply Notification">
 
-<div class="section">
+<p class="caption">
+Figure: Example notification triggered when a prospect replies to the campaign.
+</p>
 
-<h2>Automation Outcome</h2>
+<hr>
 
-<ul>
+<h3>6. Lead Registration in Pipeline</h3>
 
-<li>Automated reply classification</li>
+<p>
+After classification, qualified leads are automatically created and organized inside the sales pipeline workspace.
+</p>
 
-<li>Reduced manual lead triaging</li>
+<p>
+This allows the team to track and prioritize leads according to their qualification level.
+</p>
 
-<li>Faster identification of qualified prospects</li>
+<img src="images/monday-lead-pipeline.png" alt="Lead Pipeline Workspace">
 
-<li>Structured outbound lead management workflow</li>
+<p class="caption">
+Figure: Qualified leads automatically registered in the pipeline workspace.
+</p>
 
-</ul>
+<hr>
+
+<h3>7. SLA Monitoring & Escalation Alerts</h3>
+
+<p>
+To ensure timely follow-up, the system monitors response deadlines for newly created leads.
+</p>
+
+<p>
+If a lead is not contacted within the defined response window, escalation alerts are generated to notify internal stakeholders.
+</p>
+
+<p>
+This escalation system helps maintain accountability and ensures that high-priority opportunities receive prompt attention.
+</p>
+
+<img src="images/sla-escalation-alert.png" alt="SLA Escalation Alert">
+
+<p class="caption">
+Figure: Escalation notification triggered when the response SLA is exceeded.
+</p>
+
+<hr>
+
+<h2>System Summary</h2>
+
+<p>
+This project demonstrates how outbound campaigns, automation workflows, and AI-assisted classification can be combined to streamline sales operations.
+</p>
+
+<p>
+By automating reply detection, lead qualification, and pipeline routing, the system reduces manual workload while ensuring that high-intent prospects receive immediate attention.
+</p>
+
+<p>
+The workflow showcases how automation can support scalable outbound operations while maintaining responsiveness and accountability.
+</p>
+
+<br>
+
+<a class="back" href="README_detailed.html">← Back to Project Documentation</a>
 
 </div>
 
