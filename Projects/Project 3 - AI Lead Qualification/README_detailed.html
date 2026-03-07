@@ -1,1 +1,283 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Project 3 – AI Lead Qualification & Outreach Automation</title>
+
+<style>
+
+body{
+font-family:Segoe UI, Arial, sans-serif;
+background:#f8f9fb;
+color:#333;
+line-height:1.7;
+margin:auto;
+max-width:900px;
+padding:40px;
+}
+
+h1{
+color:#1e1e2f;
+}
+
+h2{
+margin-top:40px;
+color:#1e1e2f;
+}
+
+h3{
+margin-top:25px;
+color:#333;
+}
+
+ul{
+padding-left:20px;
+}
+
+.section{
+margin-bottom:50px;
+}
+
+img{
+width:100%;
+margin-top:15px;
+border-radius:6px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.back-btn{
+display:inline-block;
+margin-top:30px;
+padding:10px 16px;
+background:#1e1e2f;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.back-btn:hover{
+background:#333;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Project 3 – AI Lead Qualification & Cold Outreach Automation</h1>
+
+<div class="section">
+
+<h2>Project Overview</h2>
+
+<p>
+
+This project explores how outbound sales workflows can be automated using lead intelligence platforms, email outreach tools, and AI-powered reply classification.
+
+Modern sales teams frequently run outbound campaigns to generate new opportunities. However, manually reviewing every reply and determining whether a lead is qualified can slow down the sales pipeline.
+
+The objective of this project was to design an automated system that can identify prospects, launch structured outreach campaigns, and automatically classify replies based on intent.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>System Architecture</h2>
+
+<p>The system consists of multiple operational layers that work together:</p>
+
+<ul>
+
+<li><strong>Lead Intelligence Layer</strong> – Prospect discovery and filtering</li>
+
+<li><strong>Outreach Layer</strong> – Cold email campaign execution</li>
+
+<li><strong>Automation Layer</strong> – Reply detection and workflow triggering</li>
+
+<li><strong>AI Qualification Layer</strong> – Reply analysis and lead scoring</li>
+
+<li><strong>Follow-Up Layer</strong> – Routing qualified leads into engagement workflows</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Lead Intelligence Layer</h2>
+
+<p>
+
+Prospects were sourced using a lead intelligence platform where ideal customer profiles were defined. Filtering criteria included company size, industry type, and operational roles relevant to service organizations.
+
+This step ensures outreach efforts focus on decision-makers who are more likely to benefit from the service.
+
+</p>
+
+<img src="images/apollo_filters.png">
+
+</div>
+
+<div class="section">
+
+<h2>Prospect Dataset Preparation</h2>
+
+<p>
+
+Once prospects were identified, the data was exported and cleaned before campaign import. Additional operational fields were added to support automation workflows such as lead scoring, engagement status, and follow-up tracking.
+
+</p>
+
+<img src="images/lead_sheet.png">
+
+</div>
+
+<div class="section">
+
+<h2>Cold Outreach Campaign</h2>
+
+<p>
+
+The cleaned prospect list was imported into an outbound email platform where a multi-step campaign was designed.
+
+The sequence typically included:
+
+</p>
+
+<ul>
+
+<li>Initial introduction email</li>
+<li>Follow-up message</li>
+<li>Break-up email</li>
+
+</ul>
+
+<p>
+
+This sequence allows teams to initiate conversations with prospects without manually sending each message.
+
+</p>
+
+<img src="images/lemlist_campaign.png">
+
+</div>
+
+<div class="section">
+
+<h2>Automation Workflow</h2>
+
+<p>
+
+When a prospect replies to the outreach email, the reply event triggers an automation workflow. The automation platform detects the response and extracts key information including sender details and message content.
+
+This event becomes the trigger for further processing within the lead qualification system.
+
+</p>
+
+<img src="images/zapier_reply_trigger.png">
+
+</div>
+
+<div class="section">
+
+<h2>AI Lead Qualification</h2>
+
+<p>
+
+Instead of manually reviewing each email reply, the system uses AI to analyze the message content and determine the intent of the prospect.
+
+Replies are typically categorized as:
+
+</p>
+
+<ul>
+
+<li>Positive Interest</li>
+<li>Neutral Inquiry</li>
+<li>Not Interested</li>
+
+</ul>
+
+<p>
+
+Each reply is assigned a lead score which determines the next action in the workflow.
+
+</p>
+
+<img src="images/ai_lead_score.png">
+
+</div>
+
+<div class="section">
+
+<h2>Automation Workflow Summary</h2>
+
+<ol>
+
+<li>Prospects sourced using lead intelligence tools</li>
+
+<li>Leads cleaned and prepared for outreach</li>
+
+<li>Outbound campaign launched</li>
+
+<li>Prospects reply to emails</li>
+
+<li>Automation detects reply event</li>
+
+<li>AI analyzes reply content</li>
+
+<li>Lead qualification score assigned</li>
+
+<li>Qualified leads routed into follow-up workflows</li>
+
+</ol>
+
+</div>
+
+<div class="section">
+
+<h2>Key Outcomes</h2>
+
+<ul>
+
+<li>Automated lead qualification using AI reply analysis</li>
+
+<li>Reduced manual screening of responses</li>
+
+<li>Faster identification of high-intent prospects</li>
+
+<li>Structured follow-up workflows for engagement</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Tools Used</h2>
+
+<ul>
+
+<li>Apollo – Lead intelligence and prospect discovery</li>
+
+<li>Lemlist – Cold email outreach campaigns</li>
+
+<li>Zapier – Workflow automation</li>
+
+<li>AI Reply Classification – Lead intent analysis</li>
+
+</ul>
+
+</div>
+
+<a class="back-btn" href="evidence.html">
+← Back to Project Evidence
+</a>
+
+</body>
+</html>
