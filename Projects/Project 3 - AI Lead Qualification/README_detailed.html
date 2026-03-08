@@ -114,6 +114,30 @@ This system demonstrates how automation can reduce manual effort while improving
 
 <hr>
 
+<h2>Campaign Intent</h2>
+
+<p>
+Before defining the target audience for the outreach campaign, the project began with a clear operational hypothesis.
+</p>
+
+<p>
+Many growing companies experience operational inefficiencies when managing inbound customer requests, internal service workflows, or support team coordination. As organizations scale, these operational processes often rely on manual communication and fragmented systems, which can slow down response times and reduce team productivity.
+</p>
+
+<p>
+The intent of this campaign was to explore how workflow automation and AI-assisted response classification could help operations teams manage incoming requests more efficiently.
+</p>
+
+<p>
+The outreach campaign was therefore designed to connect with operational leaders who are responsible for maintaining service workflows, coordinating internal teams, and improving operational efficiency within their organizations.
+</p>
+
+<p>
+This operational hypothesis guided the definition of the Ideal Customer Profile used for prospect sourcing.
+</p>
+
+<hr>
+
 <h2>Ideal Customer Profile (ICP)</h2>
 
 <p>
@@ -132,6 +156,7 @@ These professionals are often responsible for improving operational efficiency, 
 <li>Customer Support Managers</li>
 <li>IT Operations Managers</li>
 <li>Support Operations Managers</li>
+<li>Head of Operations</li>
 </ul>
 
 <p>
@@ -149,7 +174,7 @@ The automation pipeline consists of multiple operational layers working together
 <h3>1. Lead Intelligence Layer</h3>
 
 <p>
-Prospects are sourced using Apollo where ideal customer profiles (ICP) are defined and filtered based on relevant operational leadership roles.
+Prospects are sourced using Apollo where ideal customer profiles are defined and filtered based on relevant operational leadership roles.
 </p>
 
 <p>
@@ -182,8 +207,6 @@ This step ensures outreach campaigns target companies and decision-makers that a
 Once prospects are identified, the lead data is exported and cleaned before campaign import.
 </p>
 
-<p>Typical data fields include:</p>
-
 <ul>
 <li>First Name</li>
 <li>Last Name</li>
@@ -195,17 +218,7 @@ Once prospects are identified, the lead data is exported and cleaned before camp
 </ul>
 
 <p>
-Additional operational fields may also be added to support automation workflows such as:
-</p>
-
-<ul>
-<li>Lead Score</li>
-<li>Engagement Status</li>
-<li>Follow-up Status</li>
-</ul>
-
-<p>
-Preparing the dataset ensures clean imports and reliable automation triggers.
+Additional operational fields may also be added to support automation workflows such as lead score and engagement status.
 </p>
 
 <hr>
@@ -213,42 +226,21 @@ Preparing the dataset ensures clean imports and reliable automation triggers.
 <h3>3. Outreach Execution Layer</h3>
 
 <p>
-The cleaned prospect list is imported into Lemlist, where a structured cold email campaign is created.
+The cleaned prospect list is imported into Lemlist where a structured cold email campaign is launched.
 </p>
-
-<p>The campaign typically includes a sequence of messages such as:</p>
 
 <ol>
-<li>Initial outreach email introducing the service</li>
-<li>Follow-up message providing additional context</li>
-<li>Breakup email asking if the contact is the right person</li>
+<li>Initial outreach email</li>
+<li>Follow-up message</li>
+<li>Break-up message</li>
 </ol>
-
-<p>
-This sequence is designed to initiate conversations with potential prospects without requiring manual outreach.
-</p>
 
 <hr>
 
 <h3>4. Automation & Reply Detection</h3>
 
 <p>
-When a prospect replies to an outreach email, Lemlist triggers an automation workflow through Zapier.
-</p>
-
-<p>
-Zapier monitors the inbox for new replies and extracts important data such as:
-</p>
-
-<ul>
-<li>Sender email</li>
-<li>Reply message</li>
-<li>Campaign source</li>
-<li>Timestamp</li>
-</ul>
-
-<p>
-This event becomes the trigger for further processing.
+When a prospect replies, Zapier detects the event and extracts relevant data such as sender email, reply message, campaign source, and timestamp.
 </p>
 
 <hr>
@@ -256,14 +248,8 @@ This event becomes the trigger for further processing.
 <h3>5. AI Lead Qualification</h3>
 
 <p>
-Instead of manually reviewing each reply, the system uses AI to analyze the message content.
+AI analyzes the response to determine prospect intent and assigns a qualification score.
 </p>
-
-<p>
-The AI classifier evaluates the response and determines the intent of the prospect.
-</p>
-
-<p>Typical classifications include:</p>
 
 <ul>
 <li>Positive Interest</li>
@@ -271,44 +257,19 @@ The AI classifier evaluates the response and determines the intent of the prospe
 <li>Not Interested</li>
 </ul>
 
-<p>
-Each reply is assigned a lead score, which indicates how likely the prospect is to become a qualified opportunity.
-</p>
-
 <hr>
 
 <h3>6. Follow-Up Workflow Routing</h3>
 
 <p>
-Based on the AI classification and lead score, different actions can be triggered automatically.
+Based on classification and lead score, different actions can be triggered automatically.
 </p>
 
 <ul>
-<li>Sending the lead to a sales follow-up pipeline</li>
-<li>Creating a task for manual outreach</li>
-<li>Marking the lead as unqualified</li>
-<li>Removing the contact from future campaigns</li>
+<li>Create follow-up tasks</li>
+<li>Send lead to sales pipeline</li>
+<li>Mark unqualified leads</li>
 </ul>
-
-<p>
-This routing process ensures that high-value leads receive immediate attention.
-</p>
-
-<hr>
-
-<h2>Automation Workflow Summary</h2>
-
-<ol>
-<li>Prospects sourced using Apollo</li>
-<li>Leads exported and cleaned</li>
-<li>Dataset imported into Lemlist</li>
-<li>Cold email campaign launched</li>
-<li>Prospects reply to outreach emails</li>
-<li>Zapier detects the reply event</li>
-<li>AI analyzes reply intent</li>
-<li>Lead score assigned automatically</li>
-<li>Leads routed to follow-up workflows</li>
-</ol>
 
 <hr>
 
@@ -346,29 +307,16 @@ This routing process ensures that high-value leads receive immediate attention.
 <h2>Notification & SLA Escalation System</h2>
 
 <p>
-In addition to automated lead classification and pipeline routing, the system also includes a notification and response monitoring layer designed to ensure timely engagement with qualified prospects.
+The system also includes a notification layer designed to ensure timely engagement with qualified prospects.
 </p>
 
-<h3>Lead Notification System</h3>
-
 <ul>
-<li>Lead name and contact information</li>
-<li>Lead classification level (Hot or Warm)</li>
-<li>Lead score assigned by the AI classification layer</li>
-<li>Timestamp indicating when the lead entered the pipeline</li>
+<li>Hot Leads – response expected within 15 minutes</li>
+<li>Warm Leads – response expected within 30-60 minutes</li>
 </ul>
-
-<h3>SLA Response Monitoring</h3>
-
-<ul>
-<li><strong>Hot Leads</strong> – Expected response within 15 minutes</li>
-<li><strong>Warm Leads</strong> – Expected response within 30–60 minutes</li>
-</ul>
-
-<h3>Escalation Logic</h3>
 
 <p>
-If a lead is not contacted within the defined SLA window, the system automatically triggers an escalation alert to internal channels used by supervisors or sales managers.
+If a lead is not contacted within the SLA window, escalation alerts are triggered for internal teams.
 </p>
 
 <hr>
@@ -376,21 +324,10 @@ If a lead is not contacted within the defined SLA window, the system automatical
 <h2>Tools Used</h2>
 
 <ul>
-<li>Apollo – Lead intelligence and prospect discovery</li>
-<li>Lemlist – Cold email campaign management</li>
-<li>Zapier – Workflow automation and event triggers</li>
-<li>AI Classification – Reply intent analysis and lead scoring</li>
-</ul>
-
-<hr>
-
-<h2>Key Outcomes</h2>
-
-<ul>
-<li>Reduced manual reply review</li>
-<li>Faster lead qualification</li>
-<li>Structured follow-up workflows</li>
-<li>Scalable outbound campaign management</li>
+<li>Apollo – Lead intelligence</li>
+<li>Lemlist – Outreach campaign execution</li>
+<li>Zapier – Workflow automation</li>
+<li>AI classification – Reply intent analysis</li>
 </ul>
 
 <hr>
@@ -399,9 +336,9 @@ If a lead is not contacted within the defined SLA window, the system automatical
 
 <ul>
 <li>Faster identification of high-intent prospects</li>
-<li>Reduced manual workload for sales teams</li>
-<li>Improved response time to inbound replies</li>
-<li>Better organization of leads within the sales pipeline</li>
+<li>Reduced manual inbox screening</li>
+<li>Improved response time to leads</li>
+<li>Scalable outbound automation</li>
 </ul>
 
 <hr>
@@ -409,13 +346,13 @@ If a lead is not contacted within the defined SLA window, the system automatical
 <h2>Future Improvements</h2>
 
 <ul>
-<li>Deeper CRM integration for automated deal tracking</li>
-<li>Advanced AI models for improved intent analysis</li>
-<li>Automated follow-up sequences triggered by lead classification</li>
-<li>Performance dashboards for campaign monitoring</li>
+<li>CRM integration</li>
+<li>Advanced AI intent analysis</li>
+<li>Automated follow-up sequences</li>
+<li>Campaign performance dashboards</li>
 </ul>
 
 </div>
 
 </body>
-</html>
+  </html>
