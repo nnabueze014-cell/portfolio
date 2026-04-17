@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,9 +7,7 @@
 <title>Nnabueze Omeke – Portfolio</title>
 
 <style>
-* {
-box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
 font-family: "Segoe UI", Arial, sans-serif;
@@ -18,8 +17,6 @@ background-color: #f8f9fb;
 color: #333;
 line-height: 1.7;
 }
-
-/* NAVIGATION */
 
 nav {
 width: 250px;
@@ -67,41 +64,18 @@ background-color: rgba(255,255,255,0.08);
 color: #ffffff;
 }
 
-nav a:focus {
-color: #ffeb3b;
-font-weight: bold;
-outline: none;
-}
-
-.nav-group {
-margin-top: 5px;
-}
-
-.nav-parent {
-cursor: pointer;
+.nav-group:hover .nav-children {
+display: block;
 }
 
 .nav-children {
 display: none;
 }
 
-.nav-group:hover .nav-children,
-.nav-group:focus-within .nav-children {
-display: block;
-}
-
 .sub-link {
 padding-left: 35px;
 font-size: 14px;
-color: #ddd;
 }
-
-.sub-link:hover,
-.sub-link:focus {
-color: #ffeb3b;
-}
-
-/* MAIN CONTENT */
 
 main {
 margin-left: 250px;
@@ -109,29 +83,9 @@ padding: 50px 60px;
 max-width: 900px;
 }
 
-h1 {
-font-size: 32px;
-color: #1e1e2f;
-}
-
-h2 {
-font-size: 24px;
-margin-top: 40px;
-color: #1e1e2f;
-}
-
-h3 {
-font-size: 18px;
-color: #555;
-}
-
-p {
-text-align: justify;
-}
-
-ul, ol {
-padding-left: 25px;
-}
+h1 { font-size: 32px; color: #1e1e2f; }
+h2 { font-size: 24px; margin-top: 40px; }
+h3 { font-size: 18px; color: #555; }
 
 .section {
 margin-bottom: 60px;
@@ -139,52 +93,28 @@ border-bottom: 1px solid #e0e0e0;
 padding-bottom: 20px;
 }
 
-a {
-color: #1e1e2f;
-}
-
-a:hover {
-text-decoration: underline;
-}
-
-html {
-scroll-behavior: smooth;
-}
-
 @media (max-width: 900px) {
-nav {
-position: relative;
-width: 100%;
-height: auto;
-text-align: center;
-}
-
-main {
-margin-left: 0;
-padding: 30px 20px;
-}
+nav { position: relative; width: 100%; height: auto; }
+main { margin-left: 0; padding: 30px 20px; }
 }
 </style>
+
 </head>
 
 <body>
 
 <nav>
-
 <h2>Portfolio</h2>
-
 <a href="#about">About Me</a>
 <a href="#skills">Skills</a>
 
 <div class="nav-group">
-<a class="nav-parent">Projects ▾</a>
-
+<a>Projects ▾</a>
 <div class="nav-children">
-<a href="#project1" class="sub-link">• Project 1</a>
-<a href="#project2" class="sub-link">• Project 2</a>
-<a href="#project3" class="sub-link">• Project 3</a>
+<a href="#project1" class="sub-link">• Lead System</a>
+<a href="#project2" class="sub-link">• Support System</a>
+<a href="#project3" class="sub-link">• AI Workflow</a>
 </div>
-
 </div>
 
 <a href="#contact">Contact</a>
@@ -194,228 +124,108 @@ padding: 30px 20px;
 <main>
 
 <div id="about" class="section">
-
 <h1>Nnabueze Omeke</h1>
-<h3>IT Support • Service Desk • Automation • Lead Systems</h3>
+<h3>Technical Support • Operations Support • Systems Analysis</h3>
 
 <p><strong>Professional Summary:</strong><br>
-
-IT Support and Automation Specialist with hands-on experience designing operational systems that connect customer support, internal workflows, and automated processes.
-
-My work focuses on translating operational challenges into structured solutions using service desk platforms, workflow automation, and system integrations. I design environments where customer requests are captured, processed through automated workflows, and converted into structured operational tasks with defined ownership and SLA accountability.
-
-Through practical projects, I have built systems that automate lead management, support ticket handling, escalation workflows, and AI-assisted lead qualification pipelines. My focus is creating operational clarity, reducing manual coordination, and improving response efficiency across support and operations teams.
-
+Technical Support and Operations Specialist focused on troubleshooting systems, improving workflows, and supporting business operations. I analyze system behavior, identify inefficiencies, and design structured solutions that improve reliability, reduce manual work, and ensure smooth day-to-day operations.
 </p>
 
-<p><strong>Areas of Interest:</strong></p>
-
+<p><strong>How I Approach Problems:</strong></p>
 <ul>
-
-<li>IT Helpdesk & Service Desk Operations</li>
-<li>Incident, Request & SLA Management</li>
-<li>Workflow Automation & Process Optimization</li>
-<li>Lead Systems & Sales Operations Automation</li>
-<li>Support Operations & Escalation Handling</li>
-<li>Cross-platform System Integration</li>
-
+<li>Break down complex systems into smaller parts</li>
+<li>Identify root causes and inconsistencies</li>
+<li>Design structured workflows</li>
+<li>Document and refine solutions</li>
 </ul>
 
+<p><strong>What I Can Help With:</strong></p>
+<ul>
+<li>Technical troubleshooting and system support</li>
+<li>Operations support and workflow organization</li>
+<li>Lead generation and outreach support</li>
+<li>Process improvement and automation</li>
+</ul>
 </div>
 
 <div id="skills" class="section">
-
 <h2>Skills</h2>
-
 <ul>
-
-<li>IT Helpdesk & Technical Support</li>
-<li>Service Desk Platforms (Freshdesk and similar ITSM systems)</li>
-<li>Workflow Automation (Zapier, Webhooks)</li>
-<li>Lead Generation & Outreach Systems (Apollo, Lemlist)</li>
-<li>Task & SLA Management (ClickUp and similar platforms)</li>
-<li>Process Documentation & Operational System Design</li>
-
+<li>Technical Troubleshooting & IT Support</li>
+<li>System Analysis & Problem Solving</li>
+<li>Workflow Automation (Zapier)</li>
+<li>Lead Generation & Outreach</li>
+<li>CRM & Data Organization</li>
+<li>Documentation & Reporting</li>
 </ul>
-
 </div>
 
 <div id="projects" class="section">
-
 <h2>Projects</h2>
 
 <div id="project1">
-
-<h3>Project 1 – Lead Automation</h3>
-
-<p><strong>Project Goal:</strong><br>
-Automate lead capture, follow-up, and internal notifications to eliminate manual handling and ensure timely engagement.</p>
-
-<p><strong>How it was achieved:</strong></p>
-
-<ol>
-
-<li>Leads captured via online form and stored centrally</li>
-<li>Automation triggered on submission</li>
-<li>CRM records and follow-up tasks created automatically</li>
-<li>Internal team notified through collaboration tools</li>
-
-</ol>
-
-<p><strong>Key Outcomes:</strong></p>
-
+<h3>Lead Management & Automation System</h3>
+<p><strong>The Problem:</strong> Manual lead handling caused delays and missed follow-ups.</p>
+<p><strong>What I Did:</strong></p>
 <ul>
-
-<li>Reduced manual data handling</li>
-<li>Improved response consistency</li>
-<li>Clear ownership of follow-up actions</li>
-
+<li>Built automated lead capture system</li>
+<li>Created follow-up workflows</li>
+<li>Integrated CRM tracking</li>
 </ul>
-
-<p><strong>Tools Used:</strong>
-Google Forms, Zapier, HubSpot, Slack, Asana</p>
-
-<a href="Projects/Project 1 - Lead Automation/evidence.html">
-View Project Evidence & Screenshots
-</a>
-
+<p><strong>Outcome:</strong></p>
+<ul>
+<li>Improved response time</li>
+<li>Reduced manual work</li>
+<li>Better tracking</li>
+</ul>
 </div>
 
-<hr style="margin:40px 0;">
+<hr>
 
 <div id="project2">
-
-<h3>Project 2 – Front-Desk to Support Operations with Automated SLA Escalations</h3>
-
-<p><strong>Project Context:</strong><br>
-
-The goal was to design a realistic end-to-end support system that mirrors how real technical service companies handle customer requests and internal task execution.
-
-</p>
-
-<p><strong>System Architecture:</strong></p>
-
-<ol>
-
-<li><strong>Customer Support Layer</strong><br>
-Customers submit requests through a support portal which creates structured tickets with priorities and SLAs.</li>
-
-<li><strong>Automation Layer</strong><br>
-Event-driven workflows process ticket data and generate operational tasks automatically.</li>
-
-<li><strong>Operations Layer</strong><br>
-Operational tasks are executed within a project management system where engineers track progress and SLA deadlines.</li>
-
-</ol>
-
-<p><strong>Key Outcomes:</strong></p>
-
+<h3>Support Ticket & SLA Management System</h3>
+<p><strong>The Problem:</strong> Poor visibility and slow response to support requests.</p>
+<p><strong>What I Did:</strong></p>
 <ul>
-
-<li>End-to-end visibility from request to resolution</li>
-<li>Automated handoff between support and operations</li>
-<li>Clear SLA monitoring and escalation workflows</li>
-<li>Improved accountability and response management</li>
-
+<li>Designed structured ticket system</li>
+<li>Automated task assignment</li>
+<li>Implemented SLA tracking</li>
 </ul>
-
-<p><strong>Concepts Applied:</strong>
-
-Service Desk Operations • SLA Monitoring • Automation Workflows • Escalation Logic • Cross-team Visibility
-
-</p>
-
-<a href="Projects/Project 2 - Support Ticket Automation/evidence.html">
-View Project Evidence & Screenshots
-</a>
-
+<p><strong>Outcome:</strong></p>
+<ul>
+<li>Improved response time</li>
+<li>Clear escalation process</li>
+<li>Better team coordination</li>
+</ul>
 </div>
 
-<hr style="margin:40px 0;">
+<hr>
 
 <div id="project3">
-
-<h3>Project 3 – AI Lead Qualification & Cold Outreach Automation</h3>
-
-<p><strong>Project Context:</strong><br>
-
-Modern sales teams rely heavily on outbound prospecting, but manually reviewing replies and determining which leads are worth pursuing can slow down the sales pipeline.
-
-</p>
-
-<p><strong>System Architecture:</strong></p>
-
-<ol>
-
-<li><strong>Lead Intelligence Layer</strong><br>
-Prospects are sourced and filtered using Apollo based on company profile, industry relevance, and role-based targeting.</li>
-
-<li><strong>Outreach Layer</strong><br>
-Qualified leads are imported into Lemlist where a structured cold email sequence initiates outbound engagement.</li>
-
-<li><strong>Automation Layer</strong><br>
-Email reply events trigger Zapier workflows which process response data.</li>
-
-<li><strong>AI Qualification Layer</strong><br>
-AI analyzes the reply content to determine prospect intent and assigns a qualification score.</li>
-
-<li><strong>Follow-Up Operations Layer</strong><br>
-Qualified leads are routed into structured follow-up workflows for further engagement.</li>
-
-</ol>
-
-<p><strong>System Workflow:</strong></p>
-
-<ol>
-
-<li>Prospects sourced using a lead intelligence platform</li>
-<li>Leads verified and imported into an outbound campaign</li>
-<li>Cold email sequence initiates engagement</li>
-<li>Email replies trigger automation workflows</li>
-<li>AI analyzes reply intent and assigns lead score</li>
-<li>Qualified leads routed into follow-up workflows</li>
-
-</ol>
-
-<p><strong>Key Outcomes:</strong></p>
-
+<h3>AI-Assisted Lead Qualification System</h3>
+<p><strong>The Problem:</strong> Manual lead qualification slowed outreach.</p>
+<p><strong>What I Did:</strong></p>
 <ul>
-
-<li>Automated lead qualification using AI reply analysis</li>
-<li>Reduced manual lead triaging</li>
-<li>Structured follow-up workflows for sales engagement</li>
-<li>Scalable outbound lead generation pipeline</li>
-
+<li>Automated outreach workflows</li>
+<li>Used AI to analyze replies</li>
+<li>Built follow-up system</li>
 </ul>
-
-<p><strong>Tools Used:</strong>
-
-Apollo • Lemlist • Zapier • AI Reply Classification
-
-</p>
-
-<a href="Projects/Project 3 - AI Lead Qualification/evidence.html">
-View Project Evidence & Screenshots
-</a>
-
+<p><strong>Outcome:</strong></p>
+<ul>
+<li>Faster lead qualification</li>
+<li>Reduced manual effort</li>
+<li>Scalable outreach system</li>
+</ul>
 </div>
 
 </div>
 
 <div id="contact" class="section">
-
 <h2>Contact</h2>
-
-<p><strong>Email:</strong>
-<a href="mailto:nnabueze014@gmail.com">nnabueze014@gmail.com</a></p>
-
-<p><strong>LinkedIn:</strong>
-<a href="https://www.linkedin.com/in/nnabueze" target="_blank">
-www.linkedin.com/in/nnabueze
-</a></p>
-
-<p><strong>Location:</strong> Remote (Nigeria)</p>
-
+<p>Email: <a href="mailto:nnabueze014@gmail.com">nnabueze014@gmail.com</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/nnabueze">Profile</a></p>
+<p>Location: Remote (Nigeria)</p>
+<p><strong>Open to Remote Roles</strong></p>
 </div>
 
 </main>
