@@ -1,106 +1,206 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nnabueze Omeke – Portfolio</title>
+
+<title>Nnabueze Omeke | Technical Support • Operations • Workflow Automation</title>
 
 <style>
-* { box-sizing: border-box; }
 
-body {
-font-family: "Segoe UI", Arial, sans-serif;
-margin: 0;
-display: flex;
-background-color: #f8f9fb;
-color: #333;
-line-height: 1.7;
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
-nav {
-width: 250px;
-background-color: #1e1e2f;
-color: white;
-height: 100vh;
-position: fixed;
-padding: 30px 0;
+body{
+
+font-family:Segoe UI,Arial,sans-serif;
+display:flex;
+background:#f7f8fb;
+color:#333;
+line-height:1.7;
+
 }
 
-nav h2 {
-padding: 0 25px 20px 25px;
-margin: 0 0 30px 0;
-font-weight: 800;
-font-size: 22px;
-letter-spacing: 3px;
-text-transform: uppercase;
-color: #ffffff;
-position: relative;
+nav{
+
+width:260px;
+background:#1f2433;
+color:white;
+height:100vh;
+position:fixed;
+overflow:auto;
+padding:30px 0;
+
 }
 
-nav h2::after {
-content: "";
-position: absolute;
-left: 25px;
-bottom: 0;
-width: 50px;
-height: 3px;
-background: #ffeb3b;
-border-radius: 3px;
+nav h2{
+
+padding:0 25px 20px;
+font-size:24px;
+letter-spacing:2px;
+margin-bottom:20px;
+border-bottom:3px solid #ffc107;
+
 }
 
-nav a {
-display: block;
-color: #e4e4e4;
-text-decoration: none;
-padding: 12px 25px;
-margin: 6px 0;
-transition: 0.3s ease;
-font-weight: 500;
+nav a{
+
+display:block;
+padding:12px 25px;
+text-decoration:none;
+color:#ddd;
+transition:.3s;
+
 }
 
-nav a:hover {
-background-color: rgba(255,255,255,0.08);
-color: #ffffff;
+nav a:hover{
+
+background:#2f3648;
+color:white;
+
 }
 
-.nav-group:hover .nav-children {
-display: block;
+.nav-group:hover .children{
+
+display:block;
+
 }
 
-.nav-children {
-display: none;
+.children{
+
+display:none;
+
 }
 
-.sub-link {
-padding-left: 35px;
-font-size: 14px;
+.children a{
+
+padding-left:40px;
+font-size:14px;
+
 }
 
-main {
-margin-left: 250px;
-padding: 50px 60px;
-max-width: 900px;
+main{
+
+margin-left:260px;
+padding:50px;
+max-width:1050px;
+
 }
 
-h1 { font-size: 32px; color: #1e1e2f; }
-h2 { font-size: 24px; margin-top: 40px; }
-h3 { font-size: 18px; color: #555; }
+.section{
 
-.section {
-margin-bottom: 60px;
-border-bottom: 1px solid #e0e0e0;
-padding-bottom: 20px;
+margin-bottom:70px;
+padding-bottom:35px;
+border-bottom:1px solid #ddd;
+
 }
 
-a { color: #1e1e2f; }
+h1{
 
-a:hover { text-decoration: underline; }
+font-size:38px;
+margin-bottom:10px;
+color:#1f2433;
 
-@media (max-width: 900px) {
-nav { position: relative; width: 100%; height: auto; }
-main { margin-left: 0; padding: 30px 20px; }
 }
+
+h2{
+
+margin-bottom:20px;
+color:#1f2433;
+
+}
+
+h3{
+
+margin-top:25px;
+margin-bottom:10px;
+color:#444;
+
+}
+
+p{
+
+margin-bottom:15px;
+
+}
+
+ul{
+
+margin-left:20px;
+margin-bottom:20px;
+
+}
+
+.badges{
+
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:20px;
+
+}
+
+.badge{
+
+background:#1f2433;
+color:white;
+padding:8px 14px;
+border-radius:25px;
+font-size:14px;
+
+}
+
+.project{
+
+background:white;
+padding:25px;
+margin:30px 0;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.project a{
+
+display:inline-block;
+margin-top:15px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+footer{
+
+margin-top:40px;
+text-align:center;
+color:#777;
+
+}
+
+@media(max-width:900px){
+
+nav{
+
+position:relative;
+width:100%;
+height:auto;
+
+}
+
+main{
+
+margin-left:0;
+padding:30px;
+
+}
+
+}
+
 </style>
 
 </head>
@@ -108,17 +208,29 @@ main { margin-left: 0; padding: 30px 20px; }
 <body>
 
 <nav>
+
 <h2>Portfolio</h2>
-<a href="#about">About Me</a>
-<a href="#skills">Skills</a>
+
+<a href="#about">About</a>
+
+<a href="#skills">Core Skills</a>
+
+<a href="#experience">Internship Experience</a>
 
 <div class="nav-group">
+
 <a>Projects ▾</a>
-<div class="nav-children">
-<a href="#project1" class="sub-link">• Lead System</a>
-<a href="#project2" class="sub-link">• Support System</a>
-<a href="#project3" class="sub-link">• AI Workflow</a>
+
+<div class="children">
+
+<a href="#project1">Lead Automation</a>
+
+<a href="#project2">Support System</a>
+
+<a href="#project3">AI Workflow</a>
+
 </div>
+
 </div>
 
 <a href="#contact">Contact</a>
@@ -127,148 +239,192 @@ main { margin-left: 0; padding: 30px 20px; }
 
 <main>
 
-<div id="about" class="section">
-<h1>Nnabueze Omeke</h1>
-<h3>Technical Support • Operations Support • Systems Analysis</h3>
+<section id="about" class="section">
 
-<p><strong>Professional Summary:</strong><br>
-Technical Support and Operations Specialist focused on troubleshooting systems, improving workflows, and supporting business operations. I analyze system behavior, identify inefficiencies, and design structured solutions that improve reliability, reduce manual work, and ensure smooth day-to-day operations.
+<h1>Nnabueze Omeke</h1>
+
+<h3>Technical Support | Operations Support | CRM Administration | Workflow Automation</h3>
+
+<p>
+
+Technical Support and Operations professional with experience supporting internal business operations, researching business data, documenting workflows, building CRM automations, validating large datasets, and improving operational efficiency.
+
+During my internship with <strong>PUEPR</strong>, I worked across multiple departments supporting Operations, Marketing and Business Development by creating structured workflows, conducting large-scale research, validating datasets, developing landing pages, and improving internal processes.
+
 </p>
 
-<p><strong>How I Approach Problems:</strong></p>
-<ul>
-<li>Break down complex systems into smaller parts</li>
-<li>Identify root causes and inconsistencies</li>
-<li>Design structured workflows</li>
-<li>Document and refine solutions</li>
-</ul>
+<div class="badges">
 
-<p><strong>What I Can Help With:</strong></p>
-<ul>
-<li>Technical troubleshooting and system support</li>
-<li>Operations support and workflow organization</li>
-<li>Lead generation and outreach support</li>
-<li>Process improvement and automation</li>
-</ul>
+<div class="badge">Technical Support</div>
+
+<div class="badge">Operations Support</div>
+
+<div class="badge">CRM Administration</div>
+
+<div class="badge">Workflow Automation</div>
+
+<div class="badge">Lead Research</div>
+
+<div class="badge">Documentation</div>
+
+<div class="badge">Problem Solving</div>
+
+<div class="badge">Process Improvement</div>
+
 </div>
 
-<div id="skills" class="section">
-<h2>Skills</h2>
+</section>
+
+<section id="skills" class="section">
+
+<h2>Core Skills</h2>
+
 <ul>
-<li>Technical Troubleshooting & IT Support</li>
-<li>System Analysis & Problem Solving</li>
-<li>Workflow Automation (Zapier)</li>
-<li>Lead Generation & Outreach</li>
-<li>CRM & Data Organization</li>
-<li>Documentation & Reporting</li>
+
+<li>Technical Troubleshooting</li>
+
+<li>Workflow Design & Automation (Zapier)</li>
+
+<li>CRM Administration (HubSpot, Freshdesk, Monday.com, ClickUp)</li>
+
+<li>Landing Page Setup (HubSpot & Brevo)</li>
+
+<li>Research & Data Validation</li>
+
+<li>Lead Generation & Qualification</li>
+
+<li>Operations Documentation</li>
+
+<li>SOP Development</li>
+
+<li>Spreadsheet Analysis</li>
+
+<li>Business Process Improvement</li>
+
 </ul>
-</div>
 
-<div id="projects" class="section">
-<h2>Projects</h2>
+</section>
 
-<div id="project1">
+<section id="experience" class="section">
+
+<h2>Internship Experience — PUEPR</h2>
+
+<p>
+
+Over the course of my internship, I completed projects spanning Operations Support, CRM Administration, Workflow Automation, Market Research, Documentation and Process Improvement.
+
+</p>
+
+<h3>Key Contributions</h3>
+
+<ul>
+
+<li>Designed onboarding workflow documentation.</li>
+
+<li>Built CRM automation systems.</li>
+
+<li>Created landing pages in HubSpot and Brevo.</li>
+
+<li>Performed publisher and market research.</li>
+
+<li>Researched hundreds of wellness creators.</li>
+
+<li>Validated large datasets using spreadsheet validation systems.</li>
+
+<li>Managed lead generation pipelines.</li>
+
+<li>Produced operational documentation and reports.</li>
+
+<li>Improved workflow efficiency through automation.</li>
+
+<li>Supported day-to-day operations across multiple business functions.</li>
+
+</ul>
+
+</section>
+
+<section class="section">
+
+<h2>Featured Projects</h2>
+
+<div class="project" id="project1">
+
 <h3>Lead Management & Automation System</h3>
 
-<p><strong>The Problem:</strong> Manual lead handling caused delays and missed follow-ups.</p>
-
-<p><strong>What I Did:</strong></p>
-<ul>
-<li>Built automated lead capture system</li>
-<li>Created follow-up workflows</li>
-<li>Integrated CRM tracking</li>
-</ul>
-
-<p><strong>Outcome:</strong></p>
-<ul>
-<li>Improved response time</li>
-<li>Reduced manual work</li>
-<li>Better tracking</li>
-</ul>
-
-<p><strong>Proof:</strong> See system implementation and screenshots below.</p>
-
 <p>
-<a href="Projects/Project 1 - Lead Automation/evidence.html" target="_blank">
-View Full System Walkthrough →
-</a>
+
+Designed an automated lead capture workflow integrating Google Forms, Gmail, HubSpot and Slack to reduce manual work and improve follow-up efficiency.
+
 </p>
+
+<a href="Projects/Project 1 - Lead Automation/evidence.html" target="_blank">
+
+View Full Walkthrough →
+
+</a>
 
 </div>
 
-<hr>
+<div class="project" id="project2">
 
-<div id="project2">
 <h3>Support Ticket & SLA Management System</h3>
 
-<p><strong>The Problem:</strong> Poor visibility and slow response to support requests.</p>
-
-<p><strong>What I Did:</strong></p>
-<ul>
-<li>Designed structured ticket system</li>
-<li>Automated task assignment</li>
-<li>Implemented SLA tracking</li>
-</ul>
-
-<p><strong>Outcome:</strong></p>
-<ul>
-<li>Improved response time</li>
-<li>Clear escalation process</li>
-<li>Better team coordination</li>
-</ul>
-
-<p><strong>Proof:</strong> See system implementation and screenshots below.</p>
-
 <p>
+
+Built a structured customer support workflow using Freshdesk, ClickUp and Slack with SLA monitoring and automated ticket routing.
+
+</p>
+
 <a href="Projects/Project 2 - Support Ticket Automation/evidence.html" target="_blank">
-View Full System Walkthrough →
+
+View Full Walkthrough →
+
 </a>
-</p>
 
 </div>
 
-<hr>
+<div class="project" id="project3">
 
-<div id="project3">
-<h3>AI-Assisted Lead Qualification System</h3>
-
-<p><strong>The Problem:</strong> Manual lead qualification slowed outreach.</p>
-
-<p><strong>What I Did:</strong></p>
-<ul>
-<li>Automated outreach workflows</li>
-<li>Used AI to analyze replies</li>
-<li>Built follow-up system</li>
-</ul>
-
-<p><strong>Outcome:</strong></p>
-<ul>
-<li>Faster lead qualification</li>
-<li>Reduced manual effort</li>
-<li>Scalable outreach system</li>
-</ul>
-
-<p><strong>Proof:</strong> See system implementation and screenshots below.</p>
+<h3>AI Assisted Lead Qualification Workflow</h3>
 
 <p>
-<a href="Projects/Project 3 - AI Lead Qualification/evidence.html" target="_blank">
-View Full System Walkthrough →
-</a>
+
+Created an automated outreach pipeline combining Apollo, Lemlist, Zapier, AI and Monday.com for scalable lead qualification.
+
 </p>
 
-</div>
+<a href="Projects/Project 3 - AI Lead Qualification/evidence.html" target="_blank">
+
+View Full Walkthrough →
+
+</a>
 
 </div>
 
-<div id="contact" class="section">
+</section>
+
+<section id="contact" class="section">
+
 <h2>Contact</h2>
+
 <p>Email: <a href="mailto:nnabueze014@gmail.com">nnabueze014@gmail.com</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/nnabueze">Profile</a></p>
-<p>Location: Remote (Nigeria)</p>
-<p><strong>Status:</strong> Open to Remote Technical Support and Operations Roles</p>
-</div>
+
+<p>Portfolio: https://nnabueze014-cell.github.io/portfolio/</p>
+
+<p>Location: Nigeria (Open to Remote Work)</p>
+
+<p><strong>Available for:</strong> Technical Support • Operations Support • CRM Administration • Workflow Automation</p>
+
+</section>
+
+<footer>
+
+© 2026 Nnabueze Omeke
+
+</footer>
 
 </main>
 
 </body>
+
 </html>
