@@ -1,1 +1,167 @@
+<section class="project">
 
+    <h1>Project 5 — Multi-Country Lead Generation & Prospect Research</h1>
+
+    <p>
+        During my internship at <strong>PUEPR</strong>, I supported the Business Development
+        team by researching and qualifying business prospects across multiple countries.
+        The objective was to build high-quality outreach lists based on strict qualification
+        criteria rather than simply collecting company names.
+    </p>
+
+    <hr>
+
+    <h2>Business Objective</h2>
+
+    <p>
+        Create a consistent pipeline of qualified businesses that could be contacted for
+        outreach campaigns while maintaining high data accuracy and meeting daily production
+        targets.
+    </p>
+
+    <hr>
+
+    <h2>Project Requirements</h2>
+
+    <ul>
+        <li>Research 50 qualified businesses every day.</li>
+        <li>Maintain a weekly target of 250 businesses.</li>
+        <li>Research across 10 different countries.</li>
+        <li>Only include businesses with Google ratings of 3.5 stars or higher.</li>
+        <li>Exclude businesses that already had websites.</li>
+        <li>Ensure every business had at least one reachable contact method.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Countries Researched</h2>
+
+    <ul>
+        <li>United States</li>
+        <li>United Kingdom</li>
+        <li>Canada</li>
+        <li>Germany</li>
+        <li>Austria</li>
+        <li>France</li>
+        <li>Netherlands</li>
+        <li>Switzerland</li>
+        <li>Serbia</li>
+        <li>New Zealand</li>
+    </ul>
+
+    <hr>
+
+    <h2>Information Collected</h2>
+
+    <ul>
+        <li>Business Name</li>
+        <li>Business Category</li>
+        <li>Google Rating</li>
+        <li>Business Address</li>
+        <li>Country</li>
+        <li>Phone Number</li>
+        <li>Business Link</li>
+        <li>Website Status</li>
+        <li>Date Generated</li>
+    </ul>
+
+    <hr>
+
+    <h2>My Responsibilities</h2>
+
+    <ul>
+
+        <li>Performed business research using Google Maps.</li>
+
+        <li>Qualified businesses according to project requirements.</li>
+
+        <li>Verified website availability before adding prospects.</li>
+
+        <li>Collected structured business information into Google Sheets.</li>
+
+        <li>Organized prospects into separate country worksheets.</li>
+
+        <li>Maintained consistent daily and weekly production targets.</li>
+
+        <li>Delivered organized datasets ready for Business Development outreach.</li>
+
+    </ul>
+
+    <hr>
+
+    <h2>Tools Used</h2>
+
+    <ul>
+
+        <li>Google Maps</li>
+
+        <li>Google Sheets</li>
+
+        <li>Google Search</li>
+
+        <li>Spreadsheet Management</li>
+
+        <li>Lead Qualification</li>
+
+        <li>Business Research</li>
+
+    </ul>
+
+    <hr>
+
+    <h2>Evidence</h2>
+
+    <h3>Task Requirements</h3>
+
+    <img src="Growing_business_Lead_Task.png"
+         alt="Lead Generation Task"
+         style="width:100%;border:1px solid #ddd;border-radius:8px;margin-bottom:15px;">
+
+    <p>
+        The ClickUp task outlining the lead generation objectives, qualification rules,
+        daily targets, weekly goals, and countries assigned for research.
+    </p>
+
+    <br>
+
+    <h3>Lead Research Spreadsheet</h3>
+
+    <img src="Growing_Business_Prospects.png"
+         alt="Lead Research Spreadsheet"
+         style="width:100%;border:1px solid #ddd;border-radius:8px;">
+
+    <p>
+        Google Sheets used to organize qualified businesses across multiple countries.
+        Each worksheet represented a different country and contained structured business
+        information ready for outreach activities.
+    </p>
+
+    <hr>
+
+    <h2>Skills Demonstrated</h2>
+
+    <ul>
+
+        <li>Lead Generation</li>
+
+        <li>Prospect Research</li>
+
+        <li>B2B Research</li>
+
+        <li>Google Maps Research</li>
+
+        <li>Business Qualification</li>
+
+        <li>Data Collection</li>
+
+        <li>Spreadsheet Management</li>
+
+        <li>Attention to Detail</li>
+
+        <li>Operations Support</li>
+
+        <li>Business Development Support</li>
+
+    </ul>
+
+</section>
